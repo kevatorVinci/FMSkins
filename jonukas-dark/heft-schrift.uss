@@ -1,0 +1,13 @@
+:root {
+    --typography-family-thematic: url("heft-titel-700-71cdff8d.ttf");
+    --typography-family-condensed: url("heft-eng-600-f6759748.ttf");
+}
+.message-tag {
+    border-width: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+.message-tag-text {
+    -unity-font-definition: var(--schrift-heft-eng-600);
+    letter-spacing: 1px;
+}

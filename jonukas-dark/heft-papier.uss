@@ -1,0 +1,274 @@
+/* Every tile = a sheet of dark paper. The 9-slice keeps the deckle edge, the centre tiles the fibre. */
+.layout-tile-base-container {
+    border-radius: 0;
+}
+.surfaces-card-tile-border {
+    border-width: 0;
+    border-radius: 0;
+}
+.layout-tile-interaction-button.layout-tile-interaction-button-background {
+    background-color: #00000000;
+    background-image: var(--bild-blatt);
+    -unity-slice-left: 40;
+    -unity-slice-right: 40;
+    -unity-slice-top: 40;
+    -unity-slice-bottom: 40;
+    -unity-slice-type: tiled;
+    -unity-background-image-tint-color: #DCDCDC;
+    border-width: 0; /* Papierbild: kein Rahmen ums Blatt */
+}
+.layout-tile-interaction-button.layout-tile-interaction-button-background:hover,
+.layout-tile-interaction-button.layout-tile-interaction-button-background:active:enabled {
+    background-color: #00000000;
+    -unity-background-image-tint-color: #FFFFFF;
+}
+/* Tiles with a picture (news, static news) or a club gradient (fixture) behind the button, and the main
+   menu tiles, keep SI's look (empty image, see below). */
+#background-image > .layout-tile-interaction-button,
+#background-gradient > .layout-tile-interaction-button,
+.startScreenTile .layout-tile-interaction-button {
+    background-image: var(--bild-leer);
+}
+/* The tactics tile paints its base container green (--pitch-tile-default-background), which showed through
+   the torn edge (seen in game 23.10.2026). */
+.layout-tile-tactics .layout-tile-base-container {
+    background-color: #00000000;
+}
+/* Blocks (squad list, inbox, news + table, control bar cards) are no tiles: they carry the block surface
+   classes (10 classes, border-color-... alone in 487 templates). Half slice scale, as blocks
+   can be small. The width rule does not win everywhere (FM drew 1.3 px around the squad list), so the colour goes
+   transparent too: the sheet's own edge and shadow lie inside, the frame showed as a box around it (Jonas 31.10.2026). */
+.border-color-layout-modules-block-border-colour, .siblock-border, .block-border-only, .layout-block-base-container, .frame-panel-squad, .message-container-frame, .figma-base-card-template-inner-frame, .control_bar_button, .control_bar_button_container_min, .frames-player-attributes-full-block-size-max-rows {
+    background-color: #00000000;
+    background-image: var(--bild-blatt);
+    -unity-slice-left: 40;
+    -unity-slice-right: 40;
+    -unity-slice-top: 40;
+    -unity-slice-bottom: 40;
+    -unity-slice-type: tiled;
+    -unity-slice-scale: 0.5;
+    -unity-background-image-tint-color: #DCDCDC;
+    border-width: 0;
+    border-color: #00000000;
+    border-radius: 0;
+}
+/* A sheet inside a sheet showed as two overlapping scraps (news headline tile on the portal block, seen in game
+   23.10.2026): only the outermost holder is paper. "background-image: none" has no effect in FM27's skin
+   decoder, an empty image does. */
+.layout-tile-interaction-button-background .layout-tile-interaction-button.layout-tile-interaction-button-background,
+.layout-tile-interaction-button-background .border-color-layout-modules-block-border-colour,
+.layout-tile-interaction-button-background .siblock-border,
+.layout-tile-interaction-button-background .block-border-only,
+.layout-tile-interaction-button-background .layout-block-base-container,
+.layout-tile-interaction-button-background .frame-panel-squad,
+.layout-tile-interaction-button-background .message-container-frame,
+.layout-tile-interaction-button-background .figma-base-card-template-inner-frame,
+.layout-tile-interaction-button-background .frames-player-attributes-full-block-size-max-rows,
+.states-templates-tile-content .layout-tile-interaction-button.layout-tile-interaction-button-background,
+.states-templates-tile-content .border-color-layout-modules-block-border-colour,
+.states-templates-tile-content .siblock-border,
+.states-templates-tile-content .block-border-only,
+.states-templates-tile-content .layout-block-base-container,
+.states-templates-tile-content .frame-panel-squad,
+.states-templates-tile-content .message-container-frame,
+.states-templates-tile-content .figma-base-card-template-inner-frame,
+.states-templates-tile-content .frames-player-attributes-full-block-size-max-rows,
+.news-tile-size_large .layout-tile-interaction-button.layout-tile-interaction-button-background,
+.news-tile-size_large .border-color-layout-modules-block-border-colour,
+.news-tile-size_large .siblock-border,
+.news-tile-size_large .block-border-only,
+.news-tile-size_large .layout-block-base-container,
+.news-tile-size_large .frame-panel-squad,
+.news-tile-size_large .message-container-frame,
+.news-tile-size_large .figma-base-card-template-inner-frame,
+.news-tile-size_large .frames-player-attributes-full-block-size-max-rows,
+.border-color-layout-modules-block-border-colour .layout-tile-interaction-button.layout-tile-interaction-button-background,
+.border-color-layout-modules-block-border-colour .border-color-layout-modules-block-border-colour,
+.border-color-layout-modules-block-border-colour .siblock-border,
+.border-color-layout-modules-block-border-colour .block-border-only,
+.border-color-layout-modules-block-border-colour .layout-block-base-container,
+.border-color-layout-modules-block-border-colour .frame-panel-squad,
+.border-color-layout-modules-block-border-colour .message-container-frame,
+.border-color-layout-modules-block-border-colour .figma-base-card-template-inner-frame,
+.border-color-layout-modules-block-border-colour .frames-player-attributes-full-block-size-max-rows,
+.siblock-border .layout-tile-interaction-button.layout-tile-interaction-button-background,
+.siblock-border .border-color-layout-modules-block-border-colour,
+.siblock-border .siblock-border,
+.siblock-border .block-border-only,
+.siblock-border .layout-block-base-container,
+.siblock-border .frame-panel-squad,
+.siblock-border .message-container-frame,
+.siblock-border .figma-base-card-template-inner-frame,
+.siblock-border .frames-player-attributes-full-block-size-max-rows,
+.block-border-only .layout-tile-interaction-button.layout-tile-interaction-button-background,
+.block-border-only .border-color-layout-modules-block-border-colour,
+.block-border-only .siblock-border,
+.block-border-only .block-border-only,
+.block-border-only .layout-block-base-container,
+.block-border-only .frame-panel-squad,
+.block-border-only .message-container-frame,
+.block-border-only .figma-base-card-template-inner-frame,
+.block-border-only .frames-player-attributes-full-block-size-max-rows,
+.layout-block-base-container .layout-tile-interaction-button.layout-tile-interaction-button-background,
+.layout-block-base-container .border-color-layout-modules-block-border-colour,
+.layout-block-base-container .siblock-border,
+.layout-block-base-container .block-border-only,
+.layout-block-base-container .layout-block-base-container,
+.layout-block-base-container .frame-panel-squad,
+.layout-block-base-container .message-container-frame,
+.layout-block-base-container .figma-base-card-template-inner-frame,
+.layout-block-base-container .frames-player-attributes-full-block-size-max-rows,
+.frame-panel-squad .layout-tile-interaction-button.layout-tile-interaction-button-background,
+.frame-panel-squad .border-color-layout-modules-block-border-colour,
+.frame-panel-squad .siblock-border,
+.frame-panel-squad .block-border-only,
+.frame-panel-squad .layout-block-base-container,
+.frame-panel-squad .frame-panel-squad,
+.frame-panel-squad .message-container-frame,
+.frame-panel-squad .figma-base-card-template-inner-frame,
+.frame-panel-squad .frames-player-attributes-full-block-size-max-rows,
+.message-container-frame .layout-tile-interaction-button.layout-tile-interaction-button-background,
+.message-container-frame .border-color-layout-modules-block-border-colour,
+.message-container-frame .siblock-border,
+.message-container-frame .block-border-only,
+.message-container-frame .layout-block-base-container,
+.message-container-frame .frame-panel-squad,
+.message-container-frame .message-container-frame,
+.message-container-frame .figma-base-card-template-inner-frame,
+.message-container-frame .frames-player-attributes-full-block-size-max-rows,
+.figma-base-card-template-inner-frame .layout-tile-interaction-button.layout-tile-interaction-button-background,
+.figma-base-card-template-inner-frame .border-color-layout-modules-block-border-colour,
+.figma-base-card-template-inner-frame .siblock-border,
+.figma-base-card-template-inner-frame .block-border-only,
+.figma-base-card-template-inner-frame .layout-block-base-container,
+.figma-base-card-template-inner-frame .frame-panel-squad,
+.figma-base-card-template-inner-frame .message-container-frame,
+.figma-base-card-template-inner-frame .figma-base-card-template-inner-frame,
+.figma-base-card-template-inner-frame .frames-player-attributes-full-block-size-max-rows,
+.control_bar_button .layout-tile-interaction-button.layout-tile-interaction-button-background,
+.control_bar_button .border-color-layout-modules-block-border-colour,
+.control_bar_button .siblock-border,
+.control_bar_button .block-border-only,
+.control_bar_button .layout-block-base-container,
+.control_bar_button .frame-panel-squad,
+.control_bar_button .message-container-frame,
+.control_bar_button .figma-base-card-template-inner-frame,
+.control_bar_button .frames-player-attributes-full-block-size-max-rows,
+.control_bar_button_container_min .layout-tile-interaction-button.layout-tile-interaction-button-background,
+.control_bar_button_container_min .border-color-layout-modules-block-border-colour,
+.control_bar_button_container_min .siblock-border,
+.control_bar_button_container_min .block-border-only,
+.control_bar_button_container_min .layout-block-base-container,
+.control_bar_button_container_min .frame-panel-squad,
+.control_bar_button_container_min .message-container-frame,
+.control_bar_button_container_min .figma-base-card-template-inner-frame,
+.control_bar_button_container_min .frames-player-attributes-full-block-size-max-rows,
+.frames-player-attributes-full-block-size-max-rows .layout-tile-interaction-button.layout-tile-interaction-button-background,
+.frames-player-attributes-full-block-size-max-rows .border-color-layout-modules-block-border-colour,
+.frames-player-attributes-full-block-size-max-rows .siblock-border,
+.frames-player-attributes-full-block-size-max-rows .block-border-only,
+.frames-player-attributes-full-block-size-max-rows .layout-block-base-container,
+.frames-player-attributes-full-block-size-max-rows .frame-panel-squad,
+.frames-player-attributes-full-block-size-max-rows .message-container-frame,
+.frames-player-attributes-full-block-size-max-rows .figma-base-card-template-inner-frame,
+.frames-player-attributes-full-block-size-max-rows .frames-player-attributes-full-block-size-max-rows {
+    background-image: var(--bild-leer);
+}
+/* Control bar cards (Advice, Aufgaben ...) lay a gradient and a rounded border over the button, which tinted
+   the paper blue (seen in game 23.10.2026). */
+.control_bar_wrapper {
+    --start-colour: #00000000;
+    --end-colour: #00000000;
+}
+/* ... and inside it two code-coloured gradients in club colours (tinted the cards blue for HSV). Club colours
+   belong on the bar only (magazine rule), so the gradients go. */
+.control_bar_wrapper, .control_bar_button > SIGradient {
+    display: none;
+}
+.control_bar_wrapper_border {
+    border-width: 0;
+}
+/* Air above the deckle edge: many tiles (profile: Zufriedenheit, Training ...) have content of fixed height
+   down to the bottom edge; padding only made it overflow (tested with tint colours in game 23.10.2026). The
+   title row (34 px) gives 6 px instead, the compact Barlow heads need less. */
+.tile-title-frame {
+    height: 28px;
+    min-height: 28px;
+    margin-right: 10px;
+}
+/* Figma utility classes with a container radius that no radius token reaches (border-radius-global-border alone
+   sits on 57 templates, e.g. the frame of the match preview around a sheet). Smaller ones stay for controls. */
+.border-radius-global-border, .border-radius-global-border-large, .border-radius-8, .border-radius-16,
+.border-radius-border-radius-radius-8, .border-radius-border-radius-radius-12 {
+    border-radius: 0;
+}
+/* Foot of a block ("Tabelle minimieren / Kacheln anzeigen"): SI's own grey bar with round corners; now a strip of
+   the same paper under a hairline, so it reads as the bottom of the sheet above it. */
+.recruitment-player-search-foldout-bar {
+    background-color: #00000000;
+    background-image: var(--bild-blatt);
+    -unity-slice-left: 40;
+    -unity-slice-right: 40;
+    -unity-slice-top: 40;
+    -unity-slice-bottom: 40;
+    -unity-slice-type: tiled;
+    -unity-slice-scale: 0.5;
+    -unity-background-image-tint-color: #DCDCDC;
+    border-top-width: 1px;
+    border-top-color: #F2EBDA24;
+    border-radius: 0;
+}
+.recruitment-player-search-foldout-bar:hover {
+    background-color: #00000000;
+    -unity-background-image-tint-color: #FFFFFF;
+}
+/* Inbox list: an inline style paints it dark; the edgeless fibre on top continues the sheet. */
+.messages-tile-background #Messages {
+    background-image: var(--bild-flaeche);
+    -unity-slice-left: 1;
+    -unity-slice-right: 1;
+    -unity-slice-top: 1;
+    -unity-slice-bottom: 1;
+    -unity-slice-type: tiled;
+    -unity-background-image-tint-color: #DCDCDC;
+}
+/* Rubric heads like the magazine's kicker: ink instead of a coloured link. No rule under it (SI draws one as a thick
+   bottom border, ours was 2 px ink; Jonas 03.11.2026: no underlines anywhere). */
+.title-link-primary-text {
+    letter-spacing: 1px;
+    font-size: 17px;
+}
+.title-link-button, .title-link-button:hover, .title-link-button:active:enabled {
+    border-bottom-width: 0;
+}
+.title-link-button:hover .title-link-primary-text {
+}
+.tile-title-color {
+    letter-spacing: 1.5px;
+}
+/* Club overview finances: the chart draws its value axis left of its own box, which ran off the sheet (seen in
+   game 23.10.2026); room for the labels inside. */
+/* Finance page (Jonas 31.10.2026): projections, income and expenditure draw their value axis left of the box too,
+   into the neighbouring chart, and their date axis below it onto the dividers and table heads. Room on both sides;
+   FM draws about eleven value ticks into a short chart, so the labels go one size down. */
+.fm-finance-graph-overal, .fm-finance-graph-projections, .fm-finance-graph-income, .fm-finance-graph-expenditures {
+    padding-left: 92px;
+    margin-bottom: 24px;
+    --axis-font-size: 10;
+}
+/* Projections were the flattest chart, its eleven value labels stacked into each other (takes effect on the next
+   page build, not on the reload itself). */
+.silinechart.fm-finance-graph-projections {
+    height: 150px;
+    min-height: 150px;
+    --axis-font-size: 8;
+}
+/* League history (club history, club profile): the season labels under the axis were cut by the legend below. */
+.fm-league-history-chart {
+    margin-bottom: 22px;
+}
+/* The other money charts (finance summary, budgets, wages) draw the same value axis: room for it as well. */
+.fm-finance-chart, .fm-financial-history-chart, .fm-budget-chart, .fm-budget-graph, .fm-budget-wage-graph,
+.fm-wage-expenditure-history-chart, .fm-recruitment-chart {
+    padding-left: 92px;
+}

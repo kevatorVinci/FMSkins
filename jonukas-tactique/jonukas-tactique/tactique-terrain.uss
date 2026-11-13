@@ -1,0 +1,380 @@
+/* Jonukas Wood - tactique seule : terrains, joueurs et notes tactiques.
+   Ces règles dessinent sur le gazon et restent lisibles sur l'interface de base. */
+
+/* ---- repris de heft-taktik.uss ---- */
+.tactics-collapsable-pitch-grass-colour {
+    background-image: var(--bild-rasen);
+}
+
+/* ---- repris de heft-feinschliff.uss ---- */
+/* Spielergesichter auf der Taktiktafel (nur mit dem Zusatz gesichter.py, der FMs Taktik-Vorlage patcht): ein rundes
+   Passfoto auf Papier mit Tintenrand deckt das Trikot ab. */
+.heft-gesicht {
+    position: absolute;
+    left: 50%;
+    top: -10px;
+    width: 40px;
+    height: 40px;
+    translate: -50% 0;
+    align-items: center;
+    justify-content: center;
+    background-color: #E6E3DA;
+    border-width: 1.5px;
+    border-color: #1C1A16;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.heft-gesicht-bild {
+    width: 100%;
+    height: 100%;
+    margin-top: 3px;
+}
+
+/* Das Trikot selbst (Bild und Nummer, im Code erzeugt) weicht dem Passfoto, nur wo der Patch eins eingesetzt hat
+   (Klasse heft-mit-gesicht). Ohne Patch, etwa nach einem FM-Update, bleiben die Trikots. */
+.heft-mit-gesicht > Image, .heft-mit-gesicht > SIText {
+    display: none;
+}
+
+/* Positionskarte im Profil: Platz neutral wie im Heft (Papiergrau, Linien in Tinte) statt dunklem Rasen; die
+   Punktfarben kommen aus FMs Einstellungen. SIs Rasenbild liegt auf zwei Ebenen, beide bekommen die Skizze. */
+.pitch-small, .pitch-small-bg {
+    background-image: var(--bild-platz);
+    -unity-background-scale-mode: stretch-to-fill;
+    -unity-background-image-tint-color: #FFFFFF;
+    -unity-slice-left: 0;
+    -unity-slice-right: 0;
+    -unity-slice-top: 0;
+    -unity-slice-bottom: 0;
+}
+
+/* Positionskarte im Spielerprofil: FM setzt das Rasenbild per Code (Stilregeln greifen dort nicht). Es wird
+   unsichtbar, die Platzskizze liegt auf seinem Rahmen; die Punkte darüber bleiben. */
+.data_display-positions-suitability-default-type-thematic-orientation-landscape-200px {
+    opacity: 0;
+}
+
+.data_display-positions-suitability-default-type-thematic-orientation-landscape-200px_container {
+    background-image: var(--bild-platz);
+    -unity-background-scale-mode: stretch-to-fill;
+}
+
+/* Rollenkürzel auf den farbigen Positionsbalken der Taktik (VFV, DM, BBSm …): weiß wie im Original, ohne
+   Tintenkern (Jonas 31.10.2026). Die Tooltips darunter (#RoleNameTooltipText) bleiben Tinte auf Papier. */
+#PositionColour #text {
+    color: #FFFFFF;
+    -unity-text-outline-color: #FFFFFF;
+}
+
+/* Kürzel auf Rollenfeldern der Spielerliste (Position, mB-/oB-Rolle) ebenso weiß wie auf der Tafel. */
+.tactics-visualiser-player-position-type-gk-colour SIText, .tactics-visualiser-player-position-type-defenders-colour SIText, .tactics-visualiser-player-position-type-defensive-midfield-colour SIText, .tactics-visualiser-player-position-type-midfield-colour SIText, .tactics-visualiser-player-position-type-attacking-midfield-colour SIText, .tactics-visualiser-player-position-type-striker-colour SIText {
+    color: #FFFFFF;
+    -unity-text-outline-color: #FFFFFF;
+}
+
+/* Taktikkachel der Übersichten: der gezeichnete Platz fehlte (FMs Bild hinter der Aufstellung). Die Platzskizze
+   des Hefts in leichter Perspektive auf der Taktikfläche (ein flacher Platz wirkte auf der breiten Fläche gestaucht),
+   die Spielerfiguren etwas grösser. */
+.tactics-tile-4x4 {
+    background-image: var(--bild-platzschraeg);
+    -unity-background-scale-mode: stretch-to-fill;
+}
+
+.tactics-tile-4x4 FMPitchIndicator {
+    scale: 1.2 1.2;
+}
+
+/* Standards: Kürzel der Aufgaben (A1, C2, D1, STA) auf Kategoriefarben und auf den schwarzen Punkten des Platzes,
+   auch auf der dunklen Plakette im Ausführer-Knopf (Mitschrift 03.11.2026). */
+SIText.set-piece-pitch-text-category-a, SIText.set-piece-pitch-text-category-b, SIText.set-piece-pitch-text-category-c,
+SIText.set-piece-pitch-text-category-d, .tactics-speak-to-combo-left #tk-txt,
+#tk-box.aerial-threats-property-1-default #tk-txt {
+    color: #FFFFFF; /* fest */
+    -unity-text-outline-color: #FFFFFF; /* fest */
+}
+
+/* Gezeichnete Platzlinien (Team-News in der Kabine, Taktikkacheln): FM malt sie per Code in --pitch-line-color, SI
+   setzt 20 % Grau, auf Papier fast unsichtbar. Tinte zu 40 %; der Selektor-Trick überstimmt SIs gleichnamige Regel. */
+* .pitch-lines-fm, #TeamNewsPanel_PredictedFormation {
+    --pitch-line-color: #1C1A1666;
+}
+
+/* Figuren auf gezeichneten Plätzen (Formationskacheln im Spiel, Ergebnis): der Name ist ein Linkname (FM schreibt
+   weiß) in SIs Barlow-Klasse ohne Kontur und stand unsichtbar auf dem Papier. Namensschnitt mit Tintenkontur. Das
+   Rollenkürzel war breiter als sein dunkler Kasten („SplV“ ragte heraus): kleiner und der Kasten mit Luft. */
+FMPitchIndicator #Player SIText#Name {
+    -unity-font-definition: var(--schrift-heft-name-400);
+    font-size: 10px;
+    -unity-text-outline-width: 1.2;
+    -unity-text-outline-color: #1C1A16;
+}
+
+FMPitchIndicator SIText.tactics-pitch-role-abbreviation {
+    font-size: 10px;
+    letter-spacing: 0;
+}
+
+FMPitchIndicator #PositionContainer {
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+/* Voraussichtliche Aufstellung (Gegneranweisungen) und vereinfachte Taktiktafel: FM schreibt die Namen per Rich-Text
+   weiß auf dunkle Chips, die Tintenkontur der Heftschrift machte sie unlesbar (Chat, 01.11.2026). */
+.tactics-simplified-position-indicator-bottom SIText {
+    color: #FFFFFF; /* fest */
+    -unity-font-definition: var(--schrift-heft-text-400);
+    -unity-text-outline-width: 0;
+}
+
+/* Taktische Effektivität (henri_l1898, 01.11.2026): SI färbt die Kreise je Stufe (.tactical-effectiveness-radial-1
+   bis -10); heft-regeln setzt aber für jeden Kreis ein gespiegeltes Grün (.siradialgauge), das die Stufen
+   überdeckte, alles wirkte grün. Feste Ampel von Rot über Gelb nach Grün, mit doppelter Klasse stärker. */
+.siradialgauge.tactical-effectiveness-radial-1 { --current-colour: #C8372D; /* fest */
+}
+
+.siradialgauge.tactical-effectiveness-radial-2 { --current-colour: #D4532A; /* fest */
+}
+
+.siradialgauge.tactical-effectiveness-radial-3 { --current-colour: #DE7428; /* fest */
+}
+
+.siradialgauge.tactical-effectiveness-radial-4 { --current-colour: #E3962C; /* fest */
+}
+
+.siradialgauge.tactical-effectiveness-radial-5 { --current-colour: #D9B52A; /* fest */
+}
+
+.siradialgauge.tactical-effectiveness-radial-6 { --current-colour: #BDBE2E; /* fest */
+}
+
+.siradialgauge.tactical-effectiveness-radial-7 { --current-colour: #97B436; /* fest */
+}
+
+.siradialgauge.tactical-effectiveness-radial-8 { --current-colour: #6AA53C; /* fest */
+}
+
+.siradialgauge.tactical-effectiveness-radial-9 { --current-colour: #3B9341; /* fest */
+}
+
+.siradialgauge.tactical-effectiveness-radial-10 { --current-colour: #1F7A42; /* fest */
+}
+
+/* Dieselbe Ampel für die Effektivitätsbalken in Tabellen (gefüllte Stufen .gauge-step--selected.tactical-effectiveness-N,
+   Jonas 04.11.2026: alle Balken gleich dunkeltürkis, SIs „ondark“-Skala war gespiegelt). */
+.gauge-step--selected.tactical-effectiveness-1, .gauge-step-large--selected.tactical-effectiveness-1 { background-color: #C8372D; /* fest */
+}
+
+.gauge-step--selected.tactical-effectiveness-2, .gauge-step-large--selected.tactical-effectiveness-2 { background-color: #D4532A; /* fest */
+}
+
+.gauge-step--selected.tactical-effectiveness-3, .gauge-step-large--selected.tactical-effectiveness-3 { background-color: #DE7428; /* fest */
+}
+
+.gauge-step--selected.tactical-effectiveness-4, .gauge-step-large--selected.tactical-effectiveness-4 { background-color: #E3962C; /* fest */
+}
+
+.gauge-step--selected.tactical-effectiveness-5, .gauge-step-large--selected.tactical-effectiveness-5 { background-color: #D9B52A; /* fest */
+}
+
+.gauge-step--selected.tactical-effectiveness-6, .gauge-step-large--selected.tactical-effectiveness-6 { background-color: #BDBE2E; /* fest */
+}
+
+.gauge-step--selected.tactical-effectiveness-7, .gauge-step-large--selected.tactical-effectiveness-7 { background-color: #97B436; /* fest */
+}
+
+.gauge-step--selected.tactical-effectiveness-8, .gauge-step-large--selected.tactical-effectiveness-8 { background-color: #6AA53C; /* fest */
+}
+
+.gauge-step--selected.tactical-effectiveness-9, .gauge-step-large--selected.tactical-effectiveness-9 { background-color: #3B9341; /* fest */
+}
+
+.gauge-step--selected.tactical-effectiveness-10, .gauge-step-large--selected.tactical-effectiveness-10 { background-color: #1F7A42; /* fest */
+}
+
+FMTacticsWithPhases FMPitchIndicator SIText {
+    color: #FFFFFF; /* fest */
+    -unity-font-definition: var(--schrift-heft-text-400);
+    -unity-text-outline-width: 0.5;
+    -unity-text-outline-color: #FFFFFF; /* fest; weiße Kontur macht die kleine Schrift kräftiger (Jonas) */
+}
+
+/* Stufenbalken der taktischen Effektivität: der gewählte Strich nimmt dieselbe Skala wie die Kreise; gespiegelt war
+   er immer gleich dunkel (Jonas 01.11.2026). */
+.stepper-step--selected.tactical-effectiveness-1 { background-color: #C8372D; /* fest */
+}
+
+.stepper-step--selected.tactical-effectiveness-2 { background-color: #D4532A; /* fest */
+}
+
+.stepper-step--selected.tactical-effectiveness-3 { background-color: #DE7428; /* fest */
+}
+
+.stepper-step--selected.tactical-effectiveness-4 { background-color: #E3962C; /* fest */
+}
+
+.stepper-step--selected.tactical-effectiveness-5 { background-color: #D9B52A; /* fest */
+}
+
+.stepper-step--selected.tactical-effectiveness-6 { background-color: #BDBE2E; /* fest */
+}
+
+.stepper-step--selected.tactical-effectiveness-7 { background-color: #97B436; /* fest */
+}
+
+.stepper-step--selected.tactical-effectiveness-8 { background-color: #6AA53C; /* fest */
+}
+
+.stepper-step--selected.tactical-effectiveness-9 { background-color: #3B9341; /* fest */
+}
+
+.stepper-step--selected.tactical-effectiveness-10 { background-color: #1F7A42; /* fest */
+}
+
+/* Eignung beim Ziehen auf der Taktiktafel (Ringe und Texte an den Positionen): gespiegelt waren alle sieben Stufen
+   fast schwarzes Oliv auf dem Rasen, nicht zu unterscheiden (Jonas 01.11.2026). Hell genug für den Rasen, Grün über
+   Gelb nach Rot. */
+.tactics-visualiser-player-suitability-natural { border-color: #5FD872; -unity-background-image-tint-color: #5FD872; /* fest */
+}
+
+.tactics-visualiser-player-suitability-accomplished { border-color: #B0E05A; -unity-background-image-tint-color: #B0E05A; /* fest */
+}
+
+.tactics-visualiser-player-suitability-competent { border-color: #F0DE55; -unity-background-image-tint-color: #F0DE55; /* fest */
+}
+
+.tactics-visualiser-player-suitability-unconvincing { border-color: #F7B955; -unity-background-image-tint-color: #F7B955; /* fest */
+}
+
+.tactics-visualiser-player-suitability-awkward { border-color: #F4924A; -unity-background-image-tint-color: #F4924A; /* fest */
+}
+
+.tactics-visualiser-player-suitability-makeshift { border-color: #F06A48; -unity-background-image-tint-color: #F06A48; /* fest */
+}
+
+.tactics-visualiser-player-suitability-poor { border-color: #E8524A; -unity-background-image-tint-color: #E8524A; /* fest */
+}
+
+.tactics-visualiser-player-suitability-natural-text { color: #5FD872; /* fest */
+}
+
+.tactics-visualiser-player-suitability-accomplished-text { color: #B0E05A; /* fest */
+}
+
+.tactics-visualiser-player-suitability-competent-text { color: #F0DE55; /* fest */
+}
+
+.tactics-visualiser-player-suitability-unconvincing-text { color: #F7B955; /* fest */
+}
+
+.tactics-visualiser-player-suitability-awkward-text { color: #F4924A; /* fest */
+}
+
+.tactics-visualiser-player-suitability-makeshift-text { color: #F06A48; /* fest */
+}
+
+.tactics-visualiser-player-suitability-poor-text { color: #E8524A; /* fest */
+}
+
+/* Kleine Platzgrafik bei „Positionelle Fähigkeit“: ohne Rasen standen nur Punkte da und liefen in den Text (Jonas).
+   Ein grüner Platz darunter, etwas Abstand nach unten. */
+.tactics-accent-pitch-container-positional-ability {
+    background-color: #3F7D4A; /* fest */
+    border-radius: 2px;
+    margin-bottom: 4px;
+}
+
+/* Scoutbericht: Spielernamen unter den Trikots auf dem dunklen Rasen standen in Tinte. */
+SIText.tactics-report-pitch-name {
+    color: #FFFFFF; /* fest */
+    -unity-text-outline-width: 0;
+    -unity-font-definition: var(--schrift-heft-text-400);
+}
+
+#TeamNewsPanel #PredictedFormation FMTacticsPanel {
+    background-color: #3F7D4A; /* fest */
+    border-radius: 3px;
+}
+
+#TeamOfTheWeekPitchVisible FMTacticsPanel#DreamXI {
+    --pitch-line-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    border-width: 0;
+    background-image: var(--bild-teamplatz);
+    -unity-background-scale-mode: stretch-to-fill;
+}
+
+.season_preview_pitch_frame_max_res FMTacticsPanel.match-pitch-grass-colour {
+    background-color: #3F7D4A; /* fest */
+}
+
+.season_preview_pitch_frame_max_res FMTacticsPanel SIText.sitext {
+    color: #FFFFFF; /* fest */
+    -unity-text-outline-color: #FFFFFF;
+}
+
+#BestXICardBody FMTacticsPanel {
+    background-color: #3F7D4A; /* fest */
+    background-image: var(--bild-druckrasen);
+    -unity-background-scale-mode: stretch-to-fill;
+    -unity-background-image-tint-color: #FFFFFF;
+    border-radius: 3px;
+    --pitch-line-color: #FFFFFF73;
+}
+
+/* Namen auf Taktiktafeln (Jonas 03.11.2026: „Namen weiß, überall auf Taktiktafeln“). FM schreibt sie per Code weiß
+   (<color="#FFFFFF">), der Tintenkern oben macht sie auf dem dunklen Rasen zu Tinte (1,7–2,4:1). Hier ohne Kern:
+   ungedünnter Schnitt, Weiß, dunkler Schatten. Ebenso die Positionskürzel auf der Gegner-Tafel (Tinte auf Rasen).
+   Rückennummern (.fm-tactics-shirt-number) bleiben, wie sie sind. */
+FMTacticsPanel.tactics-collapsable-pitch-grass-colour .totw-position-indicator SIText,
+FMTacticsPanel.tactics-collapsable-pitch-grass-colour .tactics-simplified-position-indicator-bottom SIText,
+FMTacticsPanel.tactics-collapsable-pitch-grass-colour .position--filled SIText.body-xs-strong {
+    color: #FFFFFF; /* fest */
+    -unity-font-definition: var(--schrift-heft-text-400);
+    -unity-text-outline-width: 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+/* Kaderplanung › Planer › Kaderplaner (Jonas 02.11.2026): der schräge Platz war SIs dunkles Petrol-Bild, die
+   Positionsfelder schwarz und halbdurchsichtig darauf. Der Platz als gedruckter Rasen in derselben Perspektive
+   (heft_test.build_printed_lawn_perspective), die Felder als Zettel (das Blatt, klein) in Tinte; das gewählte Feld bleibt blau. Ebenso im hellen Modus
+   (Positionsfeld im Filter der Spielersuche, grau auf Rasen unlesbar; Rückmeldung 02.11.2026). */
+FMTacticsPanel.data_display-pitch_perspective-thematic {
+    background-image: var(--bild-druckrasenschraeg);
+    -unity-background-scale-mode: stretch-to-fill;
+    -unity-background-image-tint-color: #FFFFFF;
+}
+
+#RecruitmentSquadPlannerFullSquad VisualElement.justify-content-space-around {
+    background-image: var(--bild-druckrasen);
+    -unity-background-scale-mode: stretch-to-fill;
+    -unity-background-image-tint-color: #FFFFFF;
+}
+
+#RecruitmentSquadPlannerFullSquad FMTacticsPanel {
+    --pitch-line-color: #FFFFFF96;
+    background-color: #00000000;
+}
+
+/* Taktik-Assistent, Formationswahl (Jonas 02.11.2026): die Formationen lagen auf grauen, runden Flächen (SIs Taktik-
+   Taupe), die kleinen Vorschaubilder ebenso, die gewählte Zeile war ein grauer Block. Plätze als dunkelgrüne Tafel wie
+   in den Team-News, Linien weiß; die gewählte Zeile hellblau getöntes Papier mit blauer Kante (wie im Auswahlfenster). */
+#details_container.layout-block-tactics FMTacticInstructionsWidget.tactics-visualiser-pitch,
+.list-item-radio-button-style FMTacticInstructionsWidget.tactics-visualiser-pitch-preview {
+    background-color: #3F7D4A; /* fest */
+    border-color: #2C5A35; /* fest */
+    border-radius: 2px;
+    --pitch-line-color: #FFFFFF8C;
+    --visualiser-pitch-default-pitch-lines: #FFFFFF8C;
+    --visualiser-pitch-accent-pitch-lines: #FFFFFF8C;
+    --visualiser-pitch-thematic-pitch-lines: #FFFFFF8C;
+}
+
+/* Leere Ersatzplätze in der Positionsleiste (Kader, E13–E15): SIs Nachtblau als Grund (per Code), die Schrift folgte
+   global-text-primary und stand als Tinte darauf (Jonas 10.11.2026). Weiß ohne Kontur; ohne #Sub gewann die Tinte
+   (live geprüft). */
+.tactic-position-overview-widget-item__unfilled SIText#Sub.sitext {
+    color: #FFFFFF;
+    -unity-text-outline-width: 0;
+}

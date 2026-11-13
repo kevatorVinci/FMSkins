@@ -1,0 +1,30 @@
+:root {
+    --layout-modules-block-radius: 0px;
+    --layout-modules-tiles-border-radius: 0px;
+    --layout-surfaces-border-radius: 0px;
+    --global-radius-regular: 0px;
+    --global-radius-large: 0px;
+    --global-radius-small: 3px;
+    --interaction-global-radius-lg: 3px;
+    --interaction-global-radius-md: 3px;
+    --buttons-global-radius-regular: 3px;
+    --buttons-global-radius-small: 3px;
+    --interaction-input-field-border-radius-regular: 3px;
+    --interaction-input-field-border-radius-small: 3px;
+    --global-sink-surface-base: #00000000;
+    --layout-modules-block-surface: #00000000;
+    --layout-modules-block-border-colour: #F2EBDA24;
+    --spacing-padding-tiles: 12px;
+}
+.sitooltip {
+    background-color: #00000000;
+    background-image: var(--bild-blatt);
+    -unity-slice-left: 40;
+    -unity-slice-right: 40;
+    -unity-slice-top: 40;
+    -unity-slice-bottom: 40;
+    -unity-slice-type: tiled;
+    -unity-slice-scale: 0.5;
+    -unity-background-image-tint-color: #DCDCDC;
+    border-width: 0;
+}

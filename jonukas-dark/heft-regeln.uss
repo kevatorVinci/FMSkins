@@ -1,0 +1,3107 @@
+.title {
+    color: #FDFF00;
+}
+
+.sicheckbox, .sicheckboxgroupparent {
+    border-left-color: #F4F4F4;
+    border-right-color: #F4F4F4;
+    border-top-color: #F4F4F4;
+    border-bottom-color: #F4F4F4;
+    background-color: #FFFFFF00;
+}
+
+.sicheckbox > .unity-toggle__input:checked > .unity-toggle__checkmark, .sicheckbox > .unity-toggle__input:checked:hover > .unity-toggle__checkmark {
+    -unity-background-image-tint-color: #000000;
+    background-color: #F4F4F4;
+}
+
+.silabel {
+    color: #CACACA;
+}
+
+.sitile {
+    background-color: #1F1E1EB2;
+    color: #FFFFFF;
+    border-left-color: #00000099;
+    border-right-color: #00000099;
+    border-top-color: #00000099;
+    border-bottom-color: #00000099;
+}
+
+.grid-element__info-header {
+    background-color: #0000008C;
+    border-bottom-color: #FFFFFF14;
+}
+
+.grid-element__info-name {
+    color: #E9E9E9;
+}
+
+.grid-element__info-button {
+    border-color: #FFFFFF2E;
+    background-color: #FFFFFF0F;
+    color: #D6D6D6;
+}
+
+.unity-button.grid-element__info-button:hover {
+    background-color: #FFFFFF24;
+    border-color: #FFFFFF66;
+    color: #FFFFFF;
+}
+
+.siscreentitle {
+    color: #FFFFFF;
+}
+
+.navigation-focus-element-border {
+    --custom-border-color1: #D493F5;
+}
+
+.tactics-multiple-choice-options-button SIButton {
+    background-color: #9A555500;
+}
+
+.tactics-option-base {
+    background-color: #9A555500;
+}
+
+.list-popup__list {
+    border-color: #6E6E6E;
+}
+
+.list-popup__item {
+    color: #FFFFFF1F;
+}
+
+.list-popup__item:hover, .list-popup__item:selected, .list-popup__item:active:enabled, .list-popup__item.unity-collection-view__item--alternative-background:hover, .list-popup__item.unity-collection-view__item--alternative-background:selected, .list-popup__item.unity-collection-view__item--alternative-background:active:enabled {
+    background-color: #0000007A;
+}
+
+.list-popup__item.unity-collection-view__item--alternative-background {
+    background-color: #0000001F;
+}
+
+.si-dropdown-selection-label {
+    color: #FFFFFF;
+}
+
+.si-dropdown__selection-field {
+    background-color: #FFFFFF00;
+    border-color: #FFFFFF;
+}
+
+.squad-numbers-dropdown-no-value > .si-dropdown__selection-field {
+    background-color: #FFFFFF00;
+}
+
+.si-dropdown-no-border > .si-dropdown__selection-field {
+    background-color: #FFFFFF00;
+    border-color: #FFFFFF00;
+}
+
+.si-dropdown__iphone-options-list .si-dropdown__selection-field {
+    background-color: #FFF4F414;
+}
+
+.si-dropdown__slider-button {
+    background-color: #2F2F31;
+}
+
+.si-dropdown__selection-arrow {
+    -unity-background-image-tint-color: #D2D2D2;
+}
+
+.cascading-menu__folder {
+    color: #FFFFFF;
+}
+
+.full-screen-floating-block-anchor-root .full-screen-floating-block-anchor-container {
+    background-color: #00000000;
+}
+
+.full-screen-floating-block-anchor-container .si-dropdown__binding-root .virtualised-list__item, .full-screen-floating-block-anchor-container .cascading-menu__folder-list .virtualised-list__item {
+    border-color: #3A3E4D;
+}
+
+.full-screen-floating-block-anchor-close-button {
+    border-color: #FFFFFF33;
+}
+
+.fm-news-label {
+    color: #057B72;
+}
+
+.fm-news-link-test {
+    color: #00CFBF;
+    border-left-color: #00000000;
+    border-right-color: #00000000;
+    border-top-color: #00000000;
+    border-bottom-color: #00000000;
+    background-color: #00000000;
+}
+
+.fm-news-link-test:hover {
+    color: #96075B;
+}
+
+.position-picker {
+    color: #FFFFFF;
+    background-color: #B0B0B0;
+}
+
+.testin {
+    color: #FFFFFF;
+}
+
+.simenubaritem {
+    color: #FFFFFF;
+    background-color: #FFFFFF0F;
+}
+
+.simenubaritem:hover {
+    background-color: #FFFFFF1F;
+}
+
+.streamed-table-cell-selector .cell--selected {
+    background-color: #1F9BED40;
+    color: #1F9BED;
+    border-color: #FFFFFF59;
+}
+
+.ige-input-rgb > .unity-integer-field > .unity-base-text-field {
+    background-color: #00000000;
+}
+
+.ige-input-rgb > .unity-integer-field > .unity-base-field__input {
+    background-color: #00000000;
+}
+
+.ige-input-rgb > .unity-integer-field > .unity-text-field__input {
+    background-color: #00000000;
+}
+
+.bindableeditbox:hover {
+    color: #FF0000;
+}
+
+.sitile__button {
+    background-color: #BCBCBC00;
+}
+
+.sitabheader__open {
+    background-color: #00000000;
+    border-left-color: #FFFFFF40;
+    border-right-color: #FFFFFF40;
+    border-top-color: #FFFFFF40;
+    border-bottom-color: #FFFFFF40;
+}
+
+.sitabheader__closed {
+    background-color: #00000000;
+    border-left-color: #FFFFFF40;
+    border-right-color: #FFFFFF40;
+    border-top-color: #FFFFFF40;
+    border-bottom-color: #FFFFFF40;
+}
+
+.sipreferencesbox {
+    background-color: #FFFFFF1C;
+}
+
+.sipreferencessubtitle {
+    color: #00EEFF;
+}
+
+.sipreferencestab {
+    color: #FFFFFF;
+    border-left-color: #FFFFFF00;
+    border-right-color: #FFFFFF00;
+    border-top-color: #FFFFFF00;
+    border-bottom-color: #FFFFFF00;
+    background-color: #BCBCBC00;
+}
+
+.sicharttextsmall {
+    color: #FFFFFF;
+}
+
+.silabeltitle {
+    color: #00EEFF;
+}
+
+.sigreylabeltitle {
+    color: #A1A2A8;
+}
+
+.sismalltext {
+    background-color: #20202000;
+    color: #93949B;
+}
+
+.siselectedoptiontext {
+    color: #FFFFFF;
+}
+
+.very-positive-text-colour {
+    color: #56DD24;
+}
+
+.positive-text-colour {
+    color: #C4DE16;
+}
+
+.neutral-text-colour, .match-event-goal-text-colour, .match-event-penalty-text-colour, .match-event-shootoutpenalty-text-colour {
+    color: #FFFFFF;
+}
+
+.negative-text-colour {
+    color: #FFD64F;
+}
+
+.very-negative-text-colour {
+    color: #FF5454;
+}
+
+.very-positive-background-image-tint-colour {
+    -unity-background-image-tint-color: #50E250;
+}
+
+.very-negative-background-image-tint-colour {
+    -unity-background-image-tint-color: #FF5454;
+}
+
+.neutral-background-image-tint-colour {
+    -unity-background-image-tint-color: #FFFFFF59;
+}
+
+.no-action-background-image-tint-colour {
+    -unity-background-image-tint-color: #FFFFFF;
+}
+
+.scout-match-background-image-tint-colour {
+    -unity-background-image-tint-color: #4EEB3D;
+}
+
+.thumbs-up-background-image-tint-colour {
+    -unity-background-image-tint-color: #4EEB3D;
+}
+
+.thumbs-down-background-image-tint-colour {
+    -unity-background-image-tint-color: #FF4164;
+}
+
+.attend-match-background-image-tint-colour {
+    -unity-background-image-tint-color: #1973F0;
+}
+
+.match-event-owngoal-text-colour, .match-event-missedshootoutpenalty-text-colour {
+    color: #E6E6FAA6;
+}
+
+.match-event-redcard-text-colour {
+    color: #F89696;
+}
+
+.weak-area-lozenge {
+    background-color: #FFFFFF0F;
+}
+
+.position-disc--highlighted {
+    -unity-background-image-tint-color: #FDD81C;
+}
+
+.siactionbutton {
+    background-color: #F4F4F414;
+}
+
+.si-foldout {
+    color: #6DBBC5;
+}
+
+.text-regular {
+    color: #FFFFFF;
+}
+
+.ReportBackground {
+    background-color: #252931;
+}
+
+.close-button {
+    background-color: #F4F4F421;
+    color: #FFFFFF;
+}
+
+.sicarousel-small-margins .sicarouselprogresscontainer {
+    background-color: #FFFFFF00;
+}
+
+.sicarouselprogresscontainer {
+    background-color: #FFFFFF00;
+}
+
+.sicarouselprogressbar {
+    background-color: #CFCFCF1F;
+}
+
+.sicarouselprogressBarSlider {
+    background-color: #CFCFCF40;
+}
+
+.divider-horizontal {
+    background-color: #000000;
+}
+
+.divider-vertical {
+    background-color: #000000;
+}
+
+.sicard {
+    background-color: #252931;
+    border-left-color: #00000033;
+    border-right-color: #00000033;
+    border-top-color: #00000033;
+    border-bottom-color: #00000033;
+}
+
+.sireport {
+    background-color: #292729;
+}
+
+.sipopup-container.sipopup-container--transparent {
+    background-color: #00000000;
+}
+
+.figma-base-card-modal-surface.figma-base-card-template-inner-frame, .figma-base-card-modal-surface .figma-base-card-template-inner-frame {
+    -unity-background-image-tint-color: #FFFFFF59;
+}
+
+.sisite, .sitool {
+    background-color: #252931;
+    border-left-color: #00000033;
+    border-right-color: #00000033;
+    border-top-color: #00000033;
+    border-bottom-color: #00000033;
+}
+
+.setup_game_dialog {
+    background-color: #252931;
+}
+
+.setup_game_info {
+    background-color: #242424;
+}
+
+.background_transparent {
+    background-color: #FFFFFF00;
+}
+
+.segmented_graph_default_style {
+    background-color: #FFFFFF29;
+}
+
+.segmented_graph_buyin_style {
+    background-color: #FFFFFF29;
+}
+
+.sicontainer_vertical_align {
+    border-left-color: #FFFFFF40;
+    border-right-color: #FFFFFF40;
+    border-top-color: #FFFFFF40;
+    border-bottom-color: #FFFFFF40;
+}
+
+.sicontainer_horizontal_align {
+    border-left-color: #FFFFFF40;
+    border-right-color: #FFFFFF40;
+    border-top-color: #FFFFFF40;
+    border-bottom-color: #FFFFFF40;
+}
+
+.tactics-pitch-block {
+    border-left-color: #32755D;
+    border-right-color: #32755D;
+    border-top-color: #32755D;
+    border-bottom-color: #32755D;
+}
+
+.default-segmented-display-selector .segment {
+    background-color: #FFFFFF40;
+}
+
+.default-segmented-display-selector .segment--selected {
+    border-color: #FFFFFF59;
+    background-color: #33DEDE;
+}
+
+.stepper-step {
+    background-color: #FFFFFF40;
+}
+
+.stepper-step--selected {
+    background-color: #33DEDE;
+}
+
+.stepper-step--selected-border {
+    border-color: #FFFFFF59;
+}
+
+.card-header {
+    background-color: #00000000;
+}
+
+.siradialgauge {
+    --track-colour: #FFFFFF59;
+    --current-colour: #01CC62;
+    --increasing-colour: #59DD98;
+    --decreasing-colour: #00863D;
+}
+
+.sigradient {
+    --start-colour: #C0C0C0;
+    --end-colour: #C0C0C000;
+}
+
+.silinechart {
+    --axis-colour: #F5F5F5CC;
+    --line-colour: #FFFFFF;
+    --fill-colour: #01CC6266;
+    --datapoint-stroke-colour: #C8C8C866;
+    --datapoint-fill-colour: #00863D;
+}
+
+.silinechart.fm-attribute-history-chart {
+    --line-colour: #FFFFFF;
+    --fill-colour: #01CC6266;
+}
+
+.silinechart.fm-ability-history-chart {
+    --line-colour: #F5F5F5CC;
+    --fill-colour: #01CC6266;
+}
+
+.silinechart.fm-ability-recent-history-chart {
+    --line-colour: #00FFFFCC;
+    --fill-colour: #00FFFF1A;
+}
+
+.silinechart.fm-financial-history-chart {
+    --line-colour: #5BEC4BCC;
+}
+
+.silinechart.fm-wage-expenditure-history-chart {
+    --line-colour: #3FDE99CC;
+    --line-colour-1: #3FDE99CC;
+    --line-colour-2: #FF0000CC;
+}
+
+.silinechart.fm-recruitment-chart {
+    --axis-colour: #9696964D;
+    --datapoint-stroke-colour: #00000000;
+    --datapoint-fill-colour: #E6E6E6E3;
+}
+
+.silinechart.fm-league-history-chart {
+    --line-colour: #FFFFFF59;
+    --line-colour-1: #FFFFFF59;
+    --line-colour-2: #8CAFDCCC;
+}
+
+.silinechart.fm-fifa-ranking-history-chart {
+    --line-colour: #FF3FE8;
+}
+
+.silinechart.fm-squad-injury-chart {
+    --fill-colour-1: #00FFFF66;
+    --line-colour-1: #00FFFFCC;
+    --fill-colour-2: #FF000033;
+    --line-colour-2: #FF0000CC;
+}
+
+.siscatterchart {
+    --axis-colour: #F5F5F599;
+    --positive-text-colour: #65E53A;
+    --neutral-text-colour: #F7F311;
+    --negative-text-colour: #F22C2C;
+}
+
+.sixgchart {
+    --axis-colour: #F5F5F599;
+}
+
+.horizontal-radio-group .unity-radio-button:checked {
+    border-color: #FFA528;
+}
+
+.principletogglegroup-selector .item_style {
+    background-color: #00000000;
+}
+
+.si-radial-menu {
+    --highlight-colour-transparent: #1F9BEDA6;
+    --base-colour: #232735BF;
+    --divider-start-colour: #0000004D;
+    --divider-end-colour: #00000033;
+}
+
+.si-radial-menu-background {
+    background-color: #000000BF;
+}
+
+.si-combobox__preview-element {
+    color: #FFFFFF;
+}
+
+.si-combobox__selection-field {
+    background-color: #FFFFFF00;
+    border-left-color: #FFFFFF66;
+    border-right-color: #FFFFFF66;
+    border-top-color: #FFFFFF66;
+    border-bottom-color: #FFFFFF66;
+}
+
+.si-combobox__input-field {
+    border-left-color: #FFFFFF66;
+    border-right-color: #FFFFFF66;
+    border-top-color: #FFFFFF66;
+    border-bottom-color: #FFFFFF66;
+}
+
+.si-combobox__input-field #unity-text-input {
+    background-color: #FFFFFF00;
+    color: #FFFFFF;
+}
+
+.si-combobox__button {
+    border-left-color: #FFFFFF66;
+    border-right-color: #FFFFFF66;
+    border-top-color: #FFFFFF66;
+    border-bottom-color: #FFFFFF66;
+    color: #FFFFFF;
+}
+
+.si-bindable-text-edit-box-password__button {
+    background-color: #00000000;
+}
+
+.inputs-hybrid-ios-combobox-type-multi-selector .item_style {
+    background-color: #00000000;
+}
+
+.inputs-hybrid-ios-combobox-type-multi-selector .item_style__selected {
+    background-color: #FFFFFF24;
+}
+
+.si-card-title-bar .si-dropdown__selection-field {
+    background-color: #FFFFFF00;
+}
+
+.sitexttitle {
+    color: #FFFFFF;
+}
+
+.mentoring-group-list .unity-radio-button-group__child-active {
+    border-color: #557BD5;
+    background-color: #274A9D;
+}
+
+.notification-card {
+    background-color: #00000094;
+    border-left-color: #A4A3A3;
+    border-right-color: #A4A3A3;
+    border-top-color: #A4A3A3;
+    border-bottom-color: #A4A3A3;
+}
+
+.notification-description {
+    color: #FFFFFF;
+}
+
+.notification-title {
+    color: #FFFFFF;
+}
+
+.dialog-card {
+    background-color: #252931;
+    border-left-color: #FFFFFF9E;
+    border-right-color: #FFFFFF9E;
+    border-top-color: #FFFFFF9E;
+    border-bottom-color: #FFFFFF9E;
+}
+
+.dialog-card-title {
+    color: #FFFFFF;
+}
+
+.dialog-body {
+    color: #FFFFFF;
+}
+
+.dialog-button {
+    color: #FAFAFA;
+    background-color: #BCBCBC36;
+    border-left-color: #E5E5E5;
+    border-right-color: #E5E5E5;
+    border-top-color: #E5E5E5;
+    border-bottom-color: #E5E5E5;
+}
+
+.multi-selection-dropdown-row .unity-toggle__checkmark {
+    -unity-background-image-tint-color: #FFFFFF;
+    background-color: #00000000;
+}
+
+.si-news-message-read {
+    -unity-background-image-tint-color: #D48C4178;
+}
+
+.sicontainer_two_columns_align {
+    border-left-color: #FFFFFF40;
+    border-right-color: #FFFFFF40;
+    border-top-color: #FFFFFF40;
+    border-bottom-color: #FFFFFF40;
+}
+
+.sislider--step {
+    background-color: #E6E6FA59;
+}
+
+.date-selector__floating-widget {
+    background-color: #00000000;
+    border-top-color: #00000000;
+    border-bottom-color: #00000000;
+}
+
+.carousel-next-button {
+    background-color: #00000000;
+}
+
+.carousel-indicator {
+    background-color: #E6FFFFA6;
+}
+
+.carousel-indicator:hover {
+    background-color: #E6FFFF;
+}
+
+.ribbon__button {
+    border-color: #A9D4EF80;
+}
+
+.ribbon__button-left {
+    border-right-color: #00000000;
+}
+
+.ribbon__button-middle {
+    border-right-color: #00000000;
+}
+
+.ribbon-button-content__selected {
+    border-color: #E6E6FA66;
+}
+
+.si-dropdown-iphone .virtualised-list__item {
+    background-color: #2F2F31E5;
+    color: #FFFFFF;
+    border-bottom-color: #FFFFFF1A;
+}
+
+.shortcut-fake-button, .search-fake-button > SIButton {
+    background-color: #FFFFFF00;
+}
+
+.shortcuts-panel-gradient {
+    --start-colour: #00000000;
+    --end-colour: #020202F0;
+}
+
+.si-card-title-bar-header {
+    background-color: #00000000;
+}
+
+.sidropdown-iphone-card-header {
+    color: #FFFFFF;
+}
+
+.bg-hover-transparency-50:hover:enabled {
+    background-color: #00000080;
+}
+
+.search-fake-button > .sibutton:hover {
+    background-color: #FFFFFF00;
+    border-color: #FFFFFF00;
+}
+
+.matchpreferences-hightlightmodes-radialgauge {
+    --current-colour: #FFFFFF;
+}
+
+.sicheckboxvisual-checked {
+    -unity-background-image-tint-color: #000000;
+    background-color: #F2F2F2;
+}
+
+.sicheckboxvisual_partial {
+    -unity-background-image-tint-color: #000000;
+    background-color: #F2F2F2;
+}
+
+.buttons-me-match-controller-base--position-leading {
+    background-color: #E6E6FA24;
+    border-left-color: #E6E6FA33;
+    border-right-color: #E6E6FA33;
+    border-top-color: #E6E6FA33;
+    border-bottom-color: #E6E6FA33;
+}
+
+.buttons-me-match-controller-base--position-middle {
+    background-color: #E6E6FA24;
+    border-left-color: #E6E6FA33;
+    border-right-color: #E6E6FA33;
+    border-top-color: #E6E6FA33;
+    border-bottom-color: #E6E6FA33;
+}
+
+.buttons-me-match-controller-base--position-trailing {
+    background-color: #E6E6FA24;
+}
+
+.data_display-graphs-tile_elements-y_axis_label, .data_display-graphs-tile_elements-x_axis_label {
+    color: #FFFFFFA6;
+}
+
+.data_display-graphs-data_points-medium-circle-grey {
+    background-color: #C0C0C0;
+    border-left-color: #FFFFFF59;
+    border-right-color: #FFFFFF59;
+    border-top-color: #FFFFFF59;
+    border-bottom-color: #FFFFFF59;
+}
+
+.data_display-graphs-data_points-large-circle {
+    border-color: #FFFFFF59;
+}
+
+.data_display-graphs-data_points-medium-circle-purple {
+    background-color: #B27CFF;
+    border-color: #FFFFFF59;
+}
+
+.data_display-graphs-data_points-small-circle-purple {
+    background-color: #B27CFF;
+    border-color: #FFFFFF59;
+}
+
+.data_display-graphs-data_points-medium-circle-invisible {
+    background-color: #00000000;
+    border-color: #FFFFFF00;
+}
+
+.data_display-graphs-data_points-medium-circle-invisible:hover {
+    background-color: #C0C0C0;
+    border-color: #FFFFFF59;
+}
+
+.data_display-graphs-data_points-large-type-circle-cyan {
+    background-color: #3FDE99;
+    border-left-color: #FFFFFF59;
+    border-right-color: #FFFFFF59;
+    border-top-color: #FFFFFF59;
+    border-bottom-color: #FFFFFF59;
+}
+
+.fixture-cell--live {
+    background-color: #01CE6314;
+}
+
+.inputs-switch-toggle-default-switch-false.unity-toggle:focus:enabled > .unity-toggle__input > .unity-toggle__checkmark {
+    border-color: #00000000;
+}
+
+.inputs-switch-toggle-default-switch-false.unity-toggle:focus:enabled > .unity-toggle__input:checked > .unity-toggle__checkmark {
+    border-color: #00000000;
+}
+
+.siscrollview--repeat-button {
+    background-color: #000000;
+    -unity-background-image-tint-color: #FFFFFF;
+}
+
+.unity-base-slider .siscrollview--tracker {
+    background-color: #FFFFFF00;
+    border-left-color: #00000000;
+    border-right-color: #00000000;
+    border-top-color: #00000000;
+    border-bottom-color: #00000000;
+}
+
+.unity-scroller .unity-base-slider__dragger:hover:enabled {
+    background-color: #FFFFFF40;
+    border-color: #00000000;
+}
+
+.unity-scroller .unity-base-slider__tracker:hover:enabled {
+    background-color: #FFFFFF00;
+    border-color: #00000000;
+}
+
+.no-border-color {
+    border-color: #00000000;
+}
+
+.transparent-background-checkbox.unity-toggle > .unity-toggle__input:hover:enabled:checked > .unity-toggle__checkmark {
+    background-color: #F4F4F4;
+}
+
+.colour-picker-element__gradient-field {
+    border-color: #E6E6FA59;
+    background-color: #000000;
+}
+
+.colour-picker-element__spectrum-slider {
+    border-color: #E6E6FA59;
+    background-color: #000000;
+}
+
+.colour-picker-element__spectrum-slider-dragger {
+    border-color: #E6E6FA;
+    background-color: #80808029;
+}
+
+.gradient-field {
+    background-color: #000000;
+}
+
+.gradient-field__dragger {
+    border-color: #E6E6FA;
+    background-color: #80808029;
+}
+
+.swatch {
+    background-color: #D9D9D9;
+}
+
+.color-field__input-rgb {
+    background-color: #000000;
+}
+
+.color-field__input-alpha-container {
+    border-top-color: #444444;
+    background-color: #000000;
+}
+
+.color-field__input-alpha {
+    background-color: #FFFFFF;
+}
+
+.buttons-button-primary-default .sigradient {
+    --start-colour: #0D69A5;
+    --end-colour: #0D69A5;
+}
+
+.buttons-button-primary-default:hover .sigradient {
+    --start-colour: #1185D2;
+    --end-colour: #107EC6;
+}
+
+.nav-on-light .navigation-tab-portal-default-active-false .portal-image {
+    -unity-background-image-tint-color: #A9D4EFA6;
+}
+
+.grid-element__controls-button {
+    background-color: #000000BF;
+    color: #D3D3D3;
+}
+
+.unity-button.grid-element__controls-button:hover {
+    background-color: #000000BF;
+    color: #FFFFFF;
+}
+
+.unity-button.grid-element__controls-button:active {
+    background-color: #000000BF;
+    color: #808080;
+}
+
+.unity-button.grid-element__controls-button:disabled {
+    background-color: #000000BF;
+    color: #696969;
+}
+
+.grid-element__cycle-page {
+    color: #646464;
+}
+
+#IsSuggestedSubBorder .posessionproximitywarning {
+    background-color: #0E4A0800;
+}
+
+#IsSuggestedSubBorder .posessionproximitywarning .sigradient {
+    --start-colour: #0E4A0800;
+    --end-colour: #0E4A08;
+}
+
+#NewsItemButton > #SIButton .sibutton, .sibutton.no-background {
+    border-color: #00000000;
+    background-color: #00000000;
+}
+
+#SpeakToShortcutElement .virtualised-list__item, #SpeakToShortcutElement .virtualised-list__item--selected {
+    background-color: #FAFAFA00;
+}
+
+#TeamTalkContent > #CardController > #CardContainer, .background-transparent, .no-background, .non-alternating-list .virtualised-list__item--odd, .tile-states-qualification_places-large-template-2 .virtualised-list__item--last .layout-layout-divider-solid-horizontal, .siscrollview--slider, .nav-on-light .nonDiegeticButton.visual-highlighted:enabled, .nav-on-light .nonDiegeticButton .visual-highlighted:enabled, .nav-on-light .navigation-tab-dropdown.visual-highlighted:enabled, .nav-on-light .navigation-tab-dropdown .visual-highlighted:enabled, .nav-on-dark .nonDiegeticButton.visual-highlighted:enabled, .nav-on-dark .nonDiegeticButton .visual-highlighted:enabled, .nav-on-dark .navigation-tab-dropdown.visual-highlighted:enabled, .nav-on-dark .navigation-tab-dropdown .visual-highlighted:enabled {
+    background-color: #00000000;
+}
+
+#adaptive-formation-dropdown > .si-dropdown__selection-field, #adaptive-formation-dropdown-default > .si-dropdown__selection-field, #adaptive-formation-dropdown-default-no-oop > .si-dropdown__selection-field, #adaptive-formation-dropdown-ai > .si-dropdown__selection-field, #adaptive-formation-dropdown-human > .si-dropdown__selection-field {
+    background-color: #FFFFFF00;
+    border-color: #FFFFFF00;
+}
+
+#buttons-hero-toggle-buttons-active .-hero {
+    border-color: #00000000;
+}
+
+.accent-non-cell-stages-completed {
+    border-color: #01CE6314;
+}
+
+.active-tactcial-tweak__notification {
+    background-color: #00756B;
+}
+
+.adjust-budgets-button-fmc {
+    border-color: #F5A207;
+    background-color: #E5AF2529;
+}
+
+.advance-start-info-block-warning {
+    border-color: #F22C2C;
+    background-color: #F22C2C40;
+}
+
+.advanced-start-bottom-panel-phone-color {
+    background-color: #080B17D9;
+}
+
+.atmosphere-background-color-0, .atmosphere-background-color-1 {
+    background-color: #F22C2C29;
+}
+
+.atmosphere-background-color-2, .atmosphere-background-color-3 {
+    background-color: #FF780029;
+}
+
+.atmosphere-background-color-4, .atmosphere-background-color-5 {
+    background-color: #D2FF0029;
+}
+
+.atmosphere-background-color-6 {
+    background-color: #00FF0029;
+}
+
+.atmosphere-background-color-7 {
+    background-color: #00B40029;
+}
+
+.attribute-comparison-bar {
+    background-color: #FFFFFF0A;
+}
+
+.attributes-row-number {
+    border-left-color: #00000000;
+}
+
+.badge-icon-regular-lift {
+    background-color: #FFFFFF14;
+}
+
+.badge-string-thematic-default-size-small-status-negative {
+    background-color: #AA0000;
+}
+
+.badge-string-thematic-default-size-small-status-negative-text {
+    color: #FFC2C2;
+}
+
+.badge-string-thematic-default-size-small-status-neutral {
+    background-color: #616161;
+}
+
+.badge-string-thematic-default-size-small-status-neutral-text {
+    color: #DEDDDD;
+}
+
+.badge-string-thematic-default-size-small-status-positive {
+    background-color: #0B7200;
+}
+
+.badge-string-thematic-default-size-small-status-positive-text {
+    color: #B8EAB3;
+}
+
+.biography-portrait-size-medium-status-player {
+    border-color: #E6E6FA29;
+}
+
+.breadcrumbs-section-button {
+    background-color: #00000000;
+    border-left-color: #00000000;
+    border-right-color: #00000000;
+    border-top-color: #00000000;
+    border-bottom-color: #00000000;
+    -unity-background-image-tint-color: #00000000;
+    color: #00000000;
+}
+
+.breadcrumbs-section-name {
+    color: #FFFFFF;
+}
+
+.breadcrumbs-section-seperation {
+    color: #FFFFFF;
+}
+
+.buttons-button-base-dark {
+    border-color: #0A0F1E33;
+    background-color: #23273524;
+}
+
+.buttons-button-base-dark:hover {
+    background-color: #0A0F1E29;
+}
+
+.buttons-button-primary-tactics {
+    border-color: #22E681;
+    background-color: #126658;
+}
+
+.buttons-button-tactic-phase {
+    background-color: #00000000;
+}
+
+.buttons-dropdown-icon-secondary-default .si-dropdown__selection-field {
+    background-color: #00000000;
+}
+
+.buttons-icon-button-picture-default-default {
+    background-color: #00000000;
+}
+
+.buttons-quick-action-primary:active:enabled {
+    border-color: #557BD5;
+}
+
+.buttons-quick-action-primary:hover {
+    border-color: #557BD5;
+}
+
+.buttons-segmented-button-row-active-default-placement-leading {
+    border-color: #557BD5;
+}
+
+.buttons-segmented-button-row-active-default-placement-trailing {
+    border-color: #557BD5;
+}
+
+.buttons-segmented-button-row-inactive-small-placement-leading {
+    background-color: #00000000;
+}
+
+.buttons-segmented-button-row-inactive-small-placement-middle {
+    background-color: #00000000;
+}
+
+.buttons-segmented-button-row-inactive-small-placement-trailing {
+    background-color: #00000000;
+}
+
+.buttons-task-scouting-default-active-false--type-default {
+    background-color: #00000000;
+}
+
+.buttons-task-scouting-default-active-true--type-primary {
+    border-color: #557BD5;
+}
+
+.buttons-task-scouting-minres-active-true--type-primary {
+    border-color: #557BD5;
+}
+
+.buttons-task-squad_registration-default-active-true--type-primary:hover {
+    border-color: #557BD5;
+}
+
+.buttons-toggle-picture-button-alt-default-type-default--selected-false {
+    border-color: #FFFFFF33;
+}
+
+.calendar-comp-event-background-bundesliga-bottomlayer {
+    background-color: #5F000080;
+}
+
+.calendar-comp-event-background-bundesliga-toplayer {
+    --start-colour: #5F000080;
+    --end-colour: #5F000080;
+}
+
+.calendar-comp-event-background-carabao-cup-bottomlayer {
+    background-color: #00945E80;
+}
+
+.calendar-comp-event-background-carabao-cup-toplayer {
+    --start-colour: #00945E80;
+    --end-colour: #00945E00;
+}
+
+.calendar-comp-event-background-champions-league-bottomlayer {
+    background-color: #22008D80;
+}
+
+.calendar-comp-event-background-champions-league-toplayer {
+    --start-colour: #22008D80;
+    --end-colour: #22008D00;
+}
+
+.calendar-comp-event-background-championship-bottomlayer, .calendar-comp-event-background-league-one-bottomlayer, .calendar-comp-event-background-league-two-bottomlayer {
+    background-color: #BA0C2F33;
+}
+
+.calendar-comp-event-background-championship-toplayer, .calendar-comp-event-background-league-one-toplayer, .calendar-comp-event-background-league-two-toplayer {
+    --start-colour: #BA0C2F80;
+    --end-colour: #BA0C2F00;
+}
+
+.calendar-comp-event-background-europa-conference-league-bottomlayer, .calendar-comp-event-background-europa-league-bottomlayer, .calendar-comp-event-background-super-cup-bottomlayer, .calendar-comp-event-background-womens-champs-league-bottomlayer {
+    background-color: #00000080;
+}
+
+.calendar-comp-event-background-europa-conference-league-toplayer {
+    --start-colour: #00000080;
+    --end-colour: #147C0900;
+}
+
+.calendar-comp-event-background-europa-league-toplayer {
+    --start-colour: #00000080;
+    --end-colour: #A22C0000;
+}
+
+.calendar-comp-event-background-premier-league-bottomlayer {
+    background-color: #922DAB80;
+}
+
+.calendar-comp-event-background-premier-league-toplayer {
+    --start-colour: #5916A733;
+    --end-colour: #5916A700;
+}
+
+.calendar-comp-event-background-super-cup-toplayer {
+    --start-colour: #00000080;
+    --end-colour: #00507800;
+}
+
+.calendar-comp-event-background-womens-champs-league-toplayer {
+    --start-colour: #00132380;
+    --end-colour: #1B2C5000;
+}
+
+.calendar-day-passed, .scroller-default #unity-slider, .calendar-day-passed .calendar-event-border, .calendar-day-passed .calendar-day-future, .calendar-day-future .calendar-day-future, .nav-on-light .nonDiegeticButton, .nav-on-light .nonDiegeticButton #SelectionField {
+    background-color: #FFFFFF00;
+}
+
+.card-states-welcome-pack {
+    background-color: #0A0F1E;
+}
+
+.cards-side-menu---multiple-choice {
+    border-color: #FFFFFF12;
+}
+
+.club-vision-background-colour-default, .fitness-test-result-background-colour-tbc {
+    background-color: #C0C0C029;
+}
+
+.club-vision-background-colour-negative, .fitness-test-result-background-colour-fail {
+    background-color: #FFA9A929;
+}
+
+.club-vision-background-colour-neutral {
+    background-color: #FFFFA929;
+}
+
+.club-vision-background-colour-positive, .fitness-test-result-background-colour-pass {
+    background-color: #A7F1A729;
+}
+
+.club-vision-background-colour-progress {
+    background-color: #CF86F629;
+}
+
+.club-vision-background-colour-slightly-negative {
+    background-color: #FFD0A929;
+}
+
+.club-vision-background-colour-slightly-positive {
+    background-color: #DFFAAA29;
+}
+
+.club-vision-objective-progress-container {
+    border-left-color: #E6E6FA14;
+    border-right-color: #E6E6FA14;
+    border-top-color: #E6E6FA14;
+    border-bottom-color: #E6E6FA14;
+}
+
+.coaching-rating-average {
+    color: #FFFFFF;
+    background-color: #FFFFFF29;
+}
+
+.coaching-rating-competent, .coaching-rating-reasonable {
+    color: #FFFFFFA6;
+    background-color: #FFFFFF14;
+}
+
+.coaching-rating-competent-text-colour, .coaching-rating-average-text-colour, .expenditure-type-other-piechart-series, .promise-hint, .tabgroup__tab-settings--active .navigation-tab-default-default-text, .tabgroup__tab-settings--active .navigation-tab-small-default-text, .buttongroup__button-settings--active .navigation-tab-default-default-text, .buttongroup__button-settings--active .navigation-tab-small-default-text {
+    color: #FFFFFF;
+}
+
+.coaching-rating-elite {
+    color: #65E53A;
+    background-color: #48E53A29;
+}
+
+.coaching-rating-elite-text-colour {
+    color: #65E53A;
+}
+
+.coaching-rating-good {
+    color: #CBE525;
+    background-color: #E5AF2529;
+}
+
+.coaching-rating-good-text-colour {
+    color: #CBE525;
+}
+
+.coaching-rating-outstanding {
+    color: #8CDD36;
+    background-color: #8CDD3629;
+}
+
+.coaching-rating-outstanding-text-colour, .coaching-rating-very-good-text-colour {
+    color: #8CDD36;
+}
+
+.coaching-rating-reasonable-text-colour, .stage-tree-versus-win {
+    color: #FFFFFFA6;
+}
+
+.coaching-rating-unsuited {
+    color: #F46919;
+    background-color: #F4691929;
+}
+
+.coaching-rating-unsuited-text-colour, .training-improvement-very-poor-color {
+    color: #F46919;
+}
+
+.coaching-rating-very-good {
+    color: #8CDD36;
+    background-color: #C7D43129;
+}
+
+.collapsed-button {
+    background-color: #00000000;
+}
+
+.competitions-data_display-tooltip-hover-competitions-default {
+    border-color: #E6E6FA29;
+}
+
+.con-item {
+    -unity-background-image-tint-color: #FF4164;
+}
+
+.continent-selection-radio-group .unity-radio-button-group__child-active {
+    background-color: #E6E6FA24;
+    border-color: #E6E6FA59;
+}
+
+.continent-selection-radio-group .unity-radio-button-group__child-first {
+    border-color: #E6E6FA59;
+}
+
+.continue-button {
+    border-color: #8959C5;
+}
+
+.continue-button---bundesliga {
+    background-color: #D20515;
+    border-color: #DD6D7D;
+}
+
+.continue-button---bundesliga:hover {
+    background-color: #D92D3B;
+}
+
+.continue-button---carabao-cup {
+    border-color: #00945E;
+    -unity-background-image-tint-color: #04A08C;
+}
+
+.continue-button---carabao-cup:hover, .continue-button---efl-trophy:hover, .continue-button---efl:hover {
+    -unity-background-image-tint-color: #FFFFFFD6;
+}
+
+.continue-button---conference-league {
+    border-color: #00BE14;
+}
+
+.continue-button---conference-league:hover {
+    -unity-background-image-tint-color: #00BE14CC;
+}
+
+.continue-button---efl {
+    border-color: #FF0000;
+}
+
+.continue-button---efl-trophy {
+    border-color: #00AB93;
+    -unity-background-image-tint-color: #56A89F;
+}
+
+.continue-button---europa-league {
+    border-color: #FF6900A6;
+}
+
+.continue-button---europa-league:hover {
+    -unity-background-image-tint-color: #FF690029;
+}
+
+.continue-button---premier-league {
+    border-color: #FFFFFF33;
+}
+
+.continue-button---premier-league SIGradient, .continue-button---uefa-supercup SIGradient, .continue-button---women-ucl SIGradient, .continue-button---conference-league SIGradient, .continue-button---efl SIGradient, .continue-button---efl-trophy SIGradient, .continue-button---ucl SIGradient, .continue-button---carabao-cup SIGradient, .continue-button---bundesliga SIGradient, .continue-button---europa-league SIGradient {
+    --start-colour: #FFFFFF00;
+    --end-colour: #FFFFFF00;
+}
+
+.continue-button---premier-league:hover {
+    border-color: #FFFFFF99;
+}
+
+.continue-button---ucl {
+    border-color: #0023FF;
+}
+
+.continue-button---ucl:hover {
+    -unity-background-image-tint-color: #0082FFD4;
+}
+
+.continue-button---uefa-supercup {
+    border-color: #00BCE4;
+}
+
+.continue-button---women-ucl {
+    border-color: #13FF8659;
+}
+
+.continue-flow-radio-group .unity-radio-button-group__child-active {
+    background-color: #E6E6FA24;
+    border-color: #E6E6FA59;
+}
+
+.continue-flow-radio-group .unity-radio-button-group__child-first {
+    border-color: #E6E6FA59;
+}
+
+.control_bar_wrapper {
+    --start-colour: #0B568829;
+    --end-colour: #0B56880A;
+}
+
+.controller-swap-mode-greyed-out-elements, .input-squad-planner-data-point-regular-type-ability-mode-dark-active-false:hover, .input-squad-planner-data-point-regular-type-depth-mode-dark-active-false:hover, .input-squad-planner-data-point-regular-type-position-mode-dark-active-false:hover {
+    background-color: #000000BF;
+}
+
+.controller-swap-mode-selected-player-background {
+    background-color: #783A8E;
+}
+
+.create-a-club-notification-bar-warning {
+    background-color: #FF416429;
+}
+
+.dashboard-hud-additional-buttons, .dashboard-hud-search-button {
+    background-color: #00000000;
+}
+
+.data-display-data_display-graph-shotmap-layout {
+    border-color: #FFFFFF;
+}
+
+.data_display-cell-accent-with-icon-regular-default {
+    background-color: #E6E6FA14;
+}
+
+.data_display-cell-country-womens-leagues {
+    border-color: #E6E6FA14;
+    background-color: #91F3C01F;
+}
+
+.data_display-coaching_ratings-small {
+    background-color: #FFFFFF00;
+}
+
+.data_display-graph-progress_timeline-progress_indicator {
+    border-color: #FF8773;
+    background-color: #FF4526;
+}
+
+.data_display-graph-shotmap-data-type-data {
+    background-color: #0D774159;
+}
+
+.data_display-graph-shotmap-data-type-data-opponent {
+    background-color: #770D0D59;
+}
+
+.data_display-names-overview-pitch-indicator-regular-spacing-wide:hover .text-container {
+    border-color: #0A0F1E8F;
+    background-color: #0A0F1E8F;
+}
+
+.data_display-player-report-header-squad-number-type-standard {
+    background-color: #BC1616;
+}
+
+.data_display-selection-button-property-default-active .navigation-tab-settings-circle-filled-icon {
+    background-color: #FFFFFF;
+}
+
+.data_display-selection-button-property-default-active, .filter-tags-property:active, .tab-button-segmented-selected {
+    background-color: #0B5688;
+}
+
+.data_display-set-pieces-player-indicator-visualiser-type-type6 {
+    background-color: #FFFFFF;
+}
+
+.data_display-string-thematic-accent-medium-colour-black-no-padding {
+    background-color: #00000029;
+}
+
+.data_display-table-cell-default-default-type-1---button-action-space-spacious-accent-true-orientation-default-selected-false {
+    background-color: #FFFFFF0A;
+}
+
+.dugout_event_substitution_off_player_4x4 {
+    border-color: #FF4164;
+    background-color: #FF41641A;
+}
+
+.dugout_event_substitution_on_player_4x4 {
+    border-color: #4EEB3D;
+    background-color: #4EEB3D1A;
+}
+
+.duplicate-controller-remap {
+    background-color: #ED000033;
+}
+
+.edit-bookmark-item-container {
+    background-color: #00000000;
+}
+
+.emoticon-background-colour-negative, .grades-background-colour-very-disappointed, .position-depth-and-quality-colour-bad {
+    background-color: #F22C2C29;
+}
+
+.empty-button {
+    background-color: #FFF4F400;
+}
+
+.expenditure-type-affiliate-club {
+    background-color: #F89696;
+}
+
+.expenditure-type-agent-and-intermediary-fees {
+    background-color: #9FEFCC;
+}
+
+.expenditure-type-bonuses {
+    background-color: #0D7741;
+}
+
+.expenditure-type-director-emoluments {
+    background-color: #AED431;
+}
+
+.expenditure-type-dividents {
+    background-color: #FF4164;
+}
+
+.expenditure-type-ground-maintenance {
+    background-color: #A5FEF6;
+}
+
+.expenditure-type-insurance {
+    background-color: #77C7E4;
+}
+
+.expenditure-type-interest {
+    background-color: #F9869C;
+}
+
+.expenditure-type-league-fines {
+    background-color: #858A00;
+}
+
+.expenditure-type-loan-fee, .expenditure-type-players-bought {
+    background-color: #4CFCEE;
+}
+
+.expenditure-type-loyality-bonuses {
+    background-color: #91F3C0;
+}
+
+.expenditure-type-matchday, .expenditure-type-non-player-wages {
+    background-color: #F0BE8E;
+}
+
+.expenditure-type-non-football-wages {
+    background-color: #D99FF4;
+}
+
+.expenditure-type-other, .ring-radio-button-group .unity-radio-button__checkmark, .si-radio-group-override .unity-radio-button__checkmark {
+    background-color: #FFFFFF;
+}
+
+.expenditure-type-player-wages {
+    background-color: #F7FF12;
+}
+
+.expenditure-type-scouting-costs {
+    background-color: #F9C54A;
+}
+
+.expenditure-type-tax {
+    background-color: #B3F6AC;
+}
+
+.expenditure-type-travel-costs {
+    background-color: #F4591E;
+}
+
+.expenditure-type-youth-scheme {
+    background-color: #8CB9F8;
+}
+
+.favorite_data_unpinned_background, .opinion-of-you-icon-colour-neutral, .tabgroup__tab-settings--active .navigation-tab-settings-circle-empty-icon, .tabgroup__tab-settings--active .navigation-tab-settings-circle-filled-icon, .nav-on-dark .navigation-tab-portal-default-active-true:hover #NavTabDropdownIndicator, .nav-on-dark .navigation-tab-portal-default-active-false:hover #NavTabDropdownIndicator {
+    -unity-background-image-tint-color: #FFFFFF;
+}
+
+.filter-tags-property-selected {
+    background-color: #0B5688;
+}
+
+.finances-projection-text-color-negative, .red-card-text {
+    color: #FF4164;
+}
+
+.fitness-test-result-background-colour-partial-pass {
+    background-color: #FFFFA91F;
+}
+
+.floating-block-background {
+    background-color: #0A0F1ECC;
+}
+
+.fmc-preferences-radio-buttons.buttongroup__button:enabled {
+    border-bottom-color: #00000000;
+    border-left-color: #00000000;
+    border-right-color: #00000000;
+    border-top-color: #00000000;
+    background-color: #00000000;
+}
+
+.fmc-recruitment-focus-list-button .sicontainer_horizontal_align {
+    background-color: #188B780D;
+}
+
+.fmc-recruitment-focus-list-button .virtualised-list__item--selected {
+    background-color: #12665880;
+}
+
+.fmc-squad-depth-good {
+    border-color: #02A194;
+    background-color: #02A1943D;
+}
+
+.fmc-squad-depth-lacking {
+    border-color: #0A0F1E8F;
+    background-color: #FF2159;
+}
+
+.fmc-squad-depth-reasonable {
+    border-color: #0A0F1E8F;
+    background-color: #F46919;
+}
+
+.fmc-training-last8weeks-graph {
+    border-left-color: #E6E6FA33;
+    border-right-color: #E6E6FA33;
+    border-top-color: #E6E6FA33;
+    border-bottom-color: #E6E6FA33;
+}
+
+.fmpedia-text-cell {
+    color: #FFFFFF;
+}
+
+.fmpediabutton {
+    border-left-color: #E6E6FA0F;
+    border-right-color: #E6E6FA0F;
+    border-top-color: #E6E6FA0F;
+    border-bottom-color: #E6E6FA0F;
+}
+
+.fmpediatile-placeholder {
+    background-color: #222735;
+    --start-colour: #22E68159;
+    --end-colour: #222735;
+}
+
+.focus-info-property-1-default {
+    background-color: #F22C2C14;
+}
+
+.form_bar_range_none {
+    background-color: #37383C;
+}
+
+.frame-324-tactics-visualiser-pitch-default {
+    background-color: #165A48;
+}
+
+.frame-330-tactics-visualiser-player-indicator {
+    background-color: #00000000;
+}
+
+.frame-offer-made-banner {
+    --start-colour: #C7D43129;
+    --end-colour: #C2E02829;
+    border-color: #C7D43129;
+}
+
+.frame-states-property-1-season_preview-property-2-dream-eleven-property-3-max-res {
+    background-color: #FFFFFF14;
+}
+
+.frame-tactics-nav-menu {
+    border-color: #32755D;
+}
+
+.frames-contract-terms-fill-yes-boxes-1-icon-yes-lock-no-bin-no {
+    background-color: #3FDE9933;
+}
+
+.game-creation-world-cup-nation-background-colour {
+    background-color: #10164F8F;
+}
+
+.global-search-edit-box > TextField {
+    --unity-cursor-color: #FFFFFF;
+}
+
+.global-search-result-button {
+    background-color: #00000000;
+}
+
+.global-search-see-all-button.sibutton {
+    background-color: #FFF4F400;
+    border-bottom-color: #E6E6FA;
+}
+
+.grabber {
+    background-color: #EAEAEA40;
+}
+
+.greyed-out-background {
+    background-color: #FFFFFF0A;
+}
+
+.greyed-out-background-colour, .tactical-tweak-player-row--hovered {
+    background-color: #FFFFFF0A;
+}
+
+.grid-without-scroll, .invisible-button, .segmented-button-group, .manager-creation-screen-tab-group-mobile {
+    background-color: #FFFFFF00;
+}
+
+.group-heading-highlighted-false {
+    background-color: #1A237E;
+}
+
+.group-heading-highlighted-true {
+    background-color: #0B5688;
+}
+
+.happiness-content-colour {
+    background-color: #B23FE859;
+}
+
+.happiness-delighted-colour {
+    background-color: #65E53A59;
+}
+
+.happiness-happy-colour {
+    background-color: #F7F31159;
+}
+
+.happiness-unhappy-colour {
+    background-color: #F5861059;
+}
+
+.happiness-very-happy-colour {
+    background-color: #C2E02859;
+}
+
+.happiness-very-unhappy-colour {
+    background-color: #F22C2C59;
+}
+
+.happiness-very-unhappy-text-colour {
+    color: #FFC2C2;
+}
+
+.hidden_stepper_step {
+    background-color: #00000000;
+}
+
+.horizontal-divider {
+    background-color: #FFFFFF1A;
+}
+
+.income-type-affiliate-club {
+    background-color: #D99FF4;
+    color: #D99FF4;
+}
+
+.income-type-corporate-facilities-income {
+    background-color: #F89696;
+    color: #F89696;
+}
+
+.income-type-fund-raising {
+    background-color: #6C6F78;
+    color: #6C6F78;
+}
+
+.income-type-gate-receipts {
+    background-color: #F7F311;
+    color: #F7F311;
+}
+
+.income-type-grand-income {
+    background-color: #F0BE8E;
+    color: #F0BE8E;
+}
+
+.income-type-interest, .income-type-matchday {
+    background-color: #8CB9F8;
+    color: #8CB9F8;
+}
+
+.income-type-investments {
+    background-color: #858A00;
+    color: #858A00;
+}
+
+.income-type-loans {
+    background-color: #FBFF8A;
+    color: #FBFF8A;
+}
+
+.income-type-merchandising {
+    background-color: #91F3C0;
+    color: #91F3C0;
+}
+
+.income-type-other {
+    background-color: #FFFFFF;
+    color: #FFFFFF;
+}
+
+.income-type-players-sold {
+    background-color: #F22C2C;
+    color: #F22C2C;
+}
+
+.income-type-prize-money {
+    background-color: #4CFCEE;
+    color: #4CFCEE;
+}
+
+.income-type-season-tickets {
+    background-color: #F9C54A;
+    color: #F9C54A;
+}
+
+.income-type-solidarity-income {
+    background-color: #AED431;
+    color: #AED431;
+}
+
+.income-type-sponsorship {
+    background-color: #F4591E;
+    color: #F4591E;
+}
+
+.income-type-tv-revenue {
+    background-color: #586B17;
+    color: #586B17;
+}
+
+.injury-risk-background-colour-none {
+    background-color: #01CE6329;
+}
+
+.injury-risk-siradialgauge-colour-none {
+    --current-colour: #01CE63;
+}
+
+.injury-risk-text-colour-none {
+    color: #01CE63;
+}
+
+.input-squad-planner-data-point-regular-type-ability-mode-dark-active-false {
+    border-color: #000000D9;
+    background-color: #000000A6;
+}
+
+.input-squad-planner-data-point-regular-type-depth-mode-dark-active-false, .input-squad-planner-data-point-regular-type-position-mode-dark-active-false {
+    border-color: #000000D9;
+    background-color: #000000A6;
+}
+
+.inputs-combobox-controls-default-type-integer-active-false-validation-default .si-combobox__button {
+    background-color: #00000000;
+    color: #FFFFFF;
+    border-left-color: #00000000;
+    border-right-color: #00000000;
+    border-top-color: #00000000;
+    border-bottom-color: #00000000;
+}
+
+.inputs-combobox-default-default-disabled .si-dropdown__selection-field {
+    background-color: #00000000;
+    border-left-color: #00000000;
+    border-right-color: #00000000;
+    border-top-color: #00000000;
+    border-bottom-color: #00000000;
+}
+
+.inputs-combobox-default-default-disabled-no-padding .si-dropdown__selection-field {
+    background-color: #00000000;
+    border-left-color: #00000000;
+    border-right-color: #00000000;
+    border-top-color: #00000000;
+    border-bottom-color: #00000000;
+}
+
+.inputs-combobox-default-default-secondary .si-dropdown__selection-field {
+    background-color: #00000000;
+}
+
+.inputs-hybrid-task_switch_button_alt-regular--status-none:checked {
+    border-color: #E6E6FA59;
+    background-color: #0B5688;
+}
+
+.inputs-squad-planner-data-point-small-type-position-mode-dark-active-false {
+    border-color: #000000D9;
+    background-color: #000000A6;
+}
+
+.inputs-squad-planner-data-point-small-type-position-mode-mixed-active-true {
+    border-color: #E6E6FA59;
+    background-color: #0B5688F2;
+}
+
+.inputs-switch-toggle-default-switch-false .unity-toggle__checkmark {
+    -unity-background-image-tint-color: #818181;
+}
+
+.inputs-switch-toggle-default-switch-false:hover .unity-toggle__input:hover:enabled .unity-toggle__checkmark, .inputs-switch-toggle-large-default-switch-true--type-default:hover .unity-toggle__input:hover:enabled .unity-toggle__checkmark {
+    -unity-background-image-tint-color: #818181;
+}
+
+.inputs-switch-toggle-default-switch-table .unity-toggle__checkmark {
+    -unity-background-image-tint-color: #818181;
+}
+
+.inputs-switch-toggle-large-default-switch-true--type-default .unity-toggle__checkmark, .inputs-switch-toggle-large-default-switch-true--type-on-warning .unity-toggle__checkmark {
+    -unity-background-image-tint-color: #818181;
+}
+
+.inputs-switch-toggle-large-default-switch-true--type-default:checked:hover .unity-toggle__input:checked:hover:enabled .unity-toggle__checkmark {
+    -unity-background-image-tint-color: #818181;
+}
+
+.inputs-switch-toggle-large-default-switch-true--type-on-warning:checked .unity-toggle__input:checked .unity-toggle__checkmark {
+    -unity-background-image-tint-color: #818181;
+}
+
+.inputs-switch-toggle-large-default-switch-true--type-on-warning:checked:hover .unity-toggle__input:checked:hover:enabled .unity-toggle__checkmark {
+    -unity-background-image-tint-color: #818181;
+}
+
+.inputs-text-field-default-medium-additional-comments {
+    background-color: #29292B00;
+}
+
+.international-tournament-messages-tile-background .messages-tile-background {
+    background-color: #00000000;
+    border-color: #00000000;
+}
+
+.ios-interactions-property-1-compact-speakto {
+    border-color: #FFFFFF26;
+    background-color: #0B5688;
+}
+
+.ios-match-rightside-buttons > * .buttons-button-base-default {
+    background-color: #0A0F1EE5;
+}
+
+.ios-navigation-tab-property-1-default {
+    background-color: #00000000;
+}
+
+.iphone-match-info-bar {
+    background-color: #0A0F1EE5;
+}
+
+.iphone-match-info-bar-switch-button {
+    background-color: #0A0F1EE5;
+}
+
+.jump-to-top {
+    background-color: #E6E6FA;
+}
+
+.layout-tile-interaction-button.startscreenVar, .layout-tile-tactics .layout-tile-interaction-button, .recruitment-player-scouted-grade-header--no-report {
+    background-color: #FFFFFF14;
+}
+
+.layout-tile-interaction-button.startscreenVar:active:enabled, .layout-tile-interaction-button.startscreenVar:hover, .layout-tile-tactics .layout-tile-interaction-button:active:enabled, .layout-tile-tactics .layout-tile-interaction-button:hover, .startnewcareer_custom_bg_tile .layout-tile-interaction-button:active:enabled, .startnewcareer_custom_bg_tile .layout-tile-interaction-button:hover {
+    background-color: #FFFFFF1F;
+}
+
+.layout-tile-scalable-default--background-true {
+    border-color: #FFFFFF14;
+}
+
+.league-table-top-bottom-six-border .virtualised-list__item--first {
+    border-bottom-color: #E6E6E6;
+}
+
+.league-table-top-bottom-six-no-border .virtualised-list__item--first {
+    border-bottom-color: #000000;
+}
+
+.left-right-progress-bar-child {
+    border-color: #E6E6FA59;
+}
+
+.left-right-progress-bar-child-noborder {
+    border-color: #E6E6FA59;
+}
+
+.left-right-progress-bar-left-colour {
+    background-color: #E11837;
+}
+
+.left-right-progress-bar-right-colour {
+    background-color: #97C1E7;
+}
+
+.manager-creation-accessory-selection-container {
+    border-color: #67697A;
+    background-color: #232735;
+}
+
+.manager-creation-bottom-bar-phone {
+    background-color: #080B17D9;
+}
+
+.manager-creation-colour-remap-button {
+    background-color: #00000000;
+}
+
+.manager-creation-eye-patch-selection-container {
+    border-left-color: #67697A;
+    border-right-color: #67697A;
+    border-top-color: #67697A;
+    border-bottom-color: #67697A;
+    background-color: #232735;
+}
+
+.manager-creation-face-sculpt-dropdown--active-false {
+    border-bottom-color: #00000000;
+    border-left-color: #00000000;
+    border-right-color: #00000000;
+    border-top-color: #00000000;
+    color: #E6E6FAA6;
+    background-color: #00000000;
+}
+
+.manager-creation-face-sculpt-dropdown--active-true {
+    border-left-color: #00000000;
+    border-right-color: #00000000;
+    border-top-color: #00000000;
+    background-color: #00000000;
+}
+
+.manager-creation-height-unit .unity-radio-button-group__child-active, .transfer-interest-radio-button-phone .unity-radio-button-group__child-active {
+    border-color: #FFFFFF00;
+    background-color: #FFFFFF00;
+}
+
+.manager-creation-menu .enabled-sub-menu .virtualised-list__item--selected .sigradient, .manager-creation-menu .virtualised-list__item--selected > .list-element-wrapper > .streamed-object-list-item .switch-element > #root > .sigradient, .manager-creation-menu .virtualised-list__item--selected > .list-element-wrapper > .streamed-object-list-item .switch-element > #LapelVisible > #root > .sigradient {
+    --start-colour: #0B5688A6;
+    --end-colour: #0B568859;
+}
+
+.manager-creation-popups-background {
+    background-color: #000000B2;
+}
+
+.manager-creation-screen-slider .sislider--dragger {
+    background-color: #3FDE99;
+    border-color: #FFFFFF59;
+}
+
+.manager-creation-screen-slider .sislider--tracker {
+    background-color: #FFFFFF14;
+    border-color: #FFFFFF59;
+}
+
+.manager-preset-button-active-toggle .unity-toggle__input:checked > .unity-toggle__checkmark {
+    border-color: #FFFFFF;
+}
+
+.match-pitch-grass-colour {
+    background-color: #0C513A;
+}
+
+.match_disabled_not_live {
+    background-color: #0A0F1ECC;
+}
+
+.match_disabled_not_live_background {
+    border-color: #E6E6FA29;
+    background-color: #64647873;
+}
+
+.me-team-sheet-body-licensed {
+    background-color: #FFFFFF;
+}
+
+.meeting-cell-selectable .virtualised-list__item .tiles-players-meetings-cell {
+    background-color: #3A3D4D;
+}
+
+.meeting-tiles--background-inactive {
+    background-color: #232735;
+}
+
+.menu-element--selected .main-menu-navigation-default {
+    background-color: #00000000;
+}
+
+.menu-element--selected .main-menu-navigation-default .sigradient, .menu-element--selected .main-menu-navigation-default:hover .sigradient {
+    background-color: #00000000;
+}
+
+.menu-element--selected .main-menu-navigation-default:hover {
+    border-color: #00000000;
+}
+
+.menu-tile-button-description-faded {
+    color: #E6E6E659;
+}
+
+.menu-tile-description {
+    color: #8F8F8F;
+}
+
+.menu-tile-description-white {
+    color: #FFFFFF;
+}
+
+.message-tag-blue .message-tag-bg {
+    border-color: #0369A199;
+    background-color: #0369A11F;
+}
+
+.message-tag-blue .message-tag-text, .message-tag-magenta .message-tag-text {
+    color: #EAF6FD;
+}
+
+.message-tag-cyan .message-tag-bg {
+    border-color: #0D948899;
+    background-color: #0D94881F;
+}
+
+.message-tag-cyan .message-tag-text {
+    color: #D7F4F2;
+}
+
+.message-tag-default .message-tag-bg {
+    background-color: #B7B7B91F;
+}
+
+.message-tag-green .message-tag-bg {
+    border-color: #647B0699;
+    background-color: #647B061F;
+}
+
+.message-tag-green .message-tag-text {
+    color: #FCFCEB;
+}
+
+.message-tag-induction .message-tag-bg {
+    border-color: #BFED2699;
+    background-color: #5771001F;
+}
+
+.message-tag-induction .message-tag-text {
+    color: #BFED26;
+}
+
+.message-tag-magenta .message-tag-bg {
+    border-color: #A1036A99;
+    background-color: #A1036A1F;
+}
+
+.message-tag-navy .message-tag-bg {
+    border-color: #4338CA66;
+    background-color: #4338CA66;
+}
+
+.message-tag-navy .message-tag-text {
+    color: #E0DFF7;
+}
+
+.message-tag-orange .message-tag-bg {
+    border-color: #B4530999;
+    background-color: #92400E1F;
+}
+
+.message-tag-orange .message-tag-text {
+    color: #FCF4EF;
+}
+
+.message-tag-purple .message-tag-bg {
+    border-color: #9912BE99;
+    background-color: #9912BE1F;
+}
+
+.message-tag-purple .message-tag-text {
+    color: #F9E9ED;
+}
+
+.messages-priority-gradient {
+    --start-colour: #AA000000;
+    --end-colour: #AA00003D;
+}
+
+.messages-tile-background, .international-tournament-messages-tile-background {
+    background-color: #0A0F1E66;
+    border-color: #E6E6FA14;
+}
+
+.more-info-colour {
+    -unity-background-image-tint-color: #FFFFFFA6;
+}
+
+.nation-site-team-rankings-negative-gradient {
+    --end-colour: #FF416400;
+    --start-colour: #FF416452;
+}
+
+.nation-site-team-rankings-neutral-gradient {
+    --end-colour: #B7B7B900;
+    --start-colour: #B7B7B933;
+}
+
+.nation-site-team-rankings-positive-gradient {
+    --end-colour: #4EEB3D00;
+    --start-colour: #4EEB3D33;
+}
+
+.nav-on-dark .nd-flat-black, .nd-flat-black {
+    -unity-background-image-tint-color: #FFFFFF;
+    color: #FFFFFF;
+}
+
+.nav-on-light #DateAndFixture .global-text-primary, .nav-on-light #TeamInfo .global-text-primary, .nav-on-light #InstantResultEnabled .global-text-primary, .nav-on-dark .calendar-widget-time-container .global-text-primary, .nav-on-light .dashboard-hud-manager-dropdown .si-dropdown__selection-field .global-text-primary, .nav-on-light .dashboard-hud-manager-dropdown-condensed .si-dropdown__selection-field .global-text-primary, .nav-on-light .dashboard-hud-manager-dropdown .global-text-primary, .nav-on-light .dashboard-hud-manager-dropdown-condensed .global-text-primary {
+    color: #000000F2;
+}
+
+.nav-on-light .navigation-chip {
+    background-color: #000000B2;
+}
+
+.nav-on-light .navigation-identity-entity-selector-default-switch-type-nation {
+    border-color: #000000B2;
+}
+
+.nav-on-light .navigation-identity-entity-selector-default-switch-type-nation .game-concepts-transfer_small {
+    -unity-background-image-tint-color: #000000B2;
+}
+
+.nav-on-light .navigation-identity-entity-selector-default-switch-type-nation:hover {
+    background-color: #00000014;
+}
+
+.nav-on-light .navigation-tab-portal-default-active-true .portal-image, .nav-on-light .navigation-tab-portal-default-active-true:hover .portal-image, .nav-on-light .navigation-tab-portal-default-active-false .portal-image, .nav-on-light .navigation-tab-portal-default-active-false:hover .portal-image, .nav-on-light .navigation-tab-portal-default-active-true:hover #NavTabDropdownIndicator, .nav-on-light .navigation-tab-portal-default-active-false:hover #NavTabDropdownIndicator {
+    -unity-background-image-tint-color: #000000;
+}
+
+.nav-on-light .navigation-tab-portal-default-active-true .portal-text, .nav-on-light .navigation-tab-portal-default-active-true:hover .portal-text, .nav-on-light .navigation-tab-portal-default-active-false .portal-text, .nav-on-light .navigation-tab-portal-default-active-false:hover .portal-text {
+    color: #000000B2;
+}
+
+.nav-on-light .nd-flat-black {
+    -unity-background-image-tint-color: #000000;
+    color: #000000;
+}
+
+.navigatable-tactics-empty-position-button {
+    border-color: #00000000;
+    background-color: #00000000;
+}
+
+.navigatable-tactics-position {
+    background-color: #00000000;
+}
+
+.navigation-_navigation-dropdown-menu_item_base-default {
+    background-color: #C8C8C800;
+}
+
+.navigation-dropdown-menu_item_base-default {
+    background-color: #00000000;
+}
+
+.navigation-secondary-tab-portal-default-active-true .sigradient {
+    background-color: #00000000;
+}
+
+.navigation-tab-default-default--active-false .navigation-tab-settings-circle-empty-icon {
+    -unity-background-image-tint-color: #E6E6FAA6;
+}
+
+.navigation-tab-default-default--active-false .navigation-tab-settings-circle-filled-icon {
+    -unity-background-image-tint-color: #E6E6FA00;
+}
+
+.navigation-tab-default-default--active-true, .virtualised-list__item--selected .navigation-tab-default-default--active-false {
+    border-left-color: #00000000;
+    border-right-color: #00000000;
+    border-top-color: #00000000;
+    background-color: #00000000;
+}
+
+.navigation-tab-portal-default-active-false .portal-image {
+    -unity-background-image-tint-color: #A9D4EFA6;
+}
+
+.navigation-tab-portal-default-active-false, .navigation-tab-portal-default-active-true {
+    background-color: #00000000;
+}
+
+.navigation-tab-portal-default-active-false:hover .navigation-tab-dropdown, .navigation-tab-portal-default-active-true:hover .navigation-tab-dropdown {
+    background-color: #FAFAFA00;
+}
+
+.new-badge {
+    border-color: #E6E6FA29;
+    background-color: #0D7741;
+}
+
+.news-story-block-border {
+    border-left-color: #E6E6FA29;
+    border-right-color: #E6E6FA29;
+    border-top-color: #E6E6FA29;
+    border-bottom-color: #E6E6FA29;
+}
+
+.news-story-related-news-button {
+    background-color: #00000000;
+}
+
+.no-margin-padding-bg {
+    background-color: #00000000;
+}
+
+.notifications--notifications-modal-dialog-default-default, .notifications-modal-dialog-default-default, .notifications-modal-large-default-default, .notifications-modal-dialog-online-default {
+    -unity-background-image-tint-color: #FFFFFF59;
+}
+
+.overlay-black-60 {
+    background-color: #00000099;
+}
+
+.panel-load-game-style-bar {
+    -unity-background-image-tint-color: #FFFFFF59;
+}
+
+.pitch-lines-fm {
+    --pitch-line-color: #61616133;
+}
+
+.pitch-position-icon-dark {
+    background-color: #29834D;
+}
+
+.pitch-position-icon-issue {
+    --pitch-position-striker-colour: #ED0000;
+    --pitch-position-attacking-midfielder-colour: #ED0000;
+    --pitch-position-midfielder-colour: #ED0000;
+    --pitch-position-defensive-midfielder-colour: #ED0000;
+    --pitch-position-defender-colour: #ED0000;
+    --pitch-position-goalkeeper-colour: #FFA154;
+}
+
+.pitch-position-icon-lime {
+    background-color: #3DC846B5;
+}
+
+.pitch-position-icon-picked {
+    --pitch-position-goalkeeper-colour: #000000;
+}
+
+.player-database-suggested-player-active {
+    background-color: #301926;
+}
+
+.player-match-simulation-circle {
+    border-color: #FFFFFF;
+}
+
+.player-match-simulation-circle-fullscreen {
+    border-color: #FFFFFF;
+}
+
+.player-match-simulation-circle-small {
+    border-color: #FFFFFF;
+}
+
+.player-property-1-1 {
+    background-color: #272C42;
+}
+
+.player_position_dropdown .micro-pitch-parent {
+    background-color: #177564;
+}
+
+.player_position_dropdown .si-dropdown__selection-field {
+    color: #FFFFFF;
+}
+
+.porta-agenda-header-default-porta-agenda-notification-default {
+    background-color: #FF5A28;
+}
+
+.portal-agenda-list-item-default-type-default-last-child-false {
+    border-bottom-color: #FFFFFF29;
+    background-color: #E6E6FA00;
+}
+
+.portal-agenda-list-item-default-type-default-last-child-false:hover {
+    background-color: #E6E6FA14;
+}
+
+.posessionproximitywarning .sigradient {
+    --start-colour: #0A0F1E00;
+    --end-colour: #0A0F1E;
+}
+
+.posessionproximitywarning-red .sigradient {
+    --start-colour: #86090900;
+    --end-colour: #860909;
+}
+
+.position--filled--selected .data_display-names-overview-pitch-indicator-regular-spacing-wide .text-container {
+    border-color: #E6E6FA59;
+    background-color: #0B5688;
+}
+
+.position-depth-and-quality-colour-average {
+    background-color: #F6B90A29;
+}
+
+.position-depth-image-color--average {
+    -unity-background-image-tint-color: #F6B90A29;
+}
+
+.position-depth-image-color--bad {
+    -unity-background-image-tint-color: #F22C2C29;
+}
+
+.position-depth-image-color--good {
+    -unity-background-image-tint-color: #65E53A29;
+}
+
+.press-conference-can-respond-stepper-style {
+    background-color: #3FDE99;
+}
+
+.pro-item {
+    -unity-background-image-tint-color: #4EEB64;
+}
+
+.progress-timeline-base {
+    color: #FFFFFF;
+}
+
+.progress-timeline-handle {
+    border-color: #E6E6FA59;
+}
+
+.progress-timeline-track {
+    -unity-background-image-tint-color: #E6E6FA59;
+}
+
+.promise-name-text {
+    color: #E6E6FAA6;
+}
+
+.radio_group_horizontal_align {
+    border-color: #E6E6FA24;
+}
+
+.recruitment-focus-header {
+    background-color: #188B780D;
+}
+
+.recruitment-player-scouted-grade-header--has-report {
+    background-color: #01CE631F;
+}
+
+.recruitment_database_carousel_widget__header {
+    background-color: #77C7E452;
+}
+
+.red-card {
+    background-color: #EF0F0F;
+}
+
+.red-card-block {
+    background-color: #EF0F0F;
+}
+
+.red-card-block-bundesliga {
+    background-color: #ED0918;
+}
+
+.red-card-block-efl {
+    background-color: #FF0000;
+}
+
+.red-card-block-eufa {
+    background-color: #FF0045;
+}
+
+.red-card-block-fifa {
+    background-color: #D11D02;
+}
+
+.reputation-highlight-color, .reputation-highlight-color-heading-text .data-display-data_display-table-heading-default-default .text-header-container .sitext {
+    color: #FFB82A;
+}
+
+.ring-radio-button-group .unity-radio-button__checkmark-background {
+    background-color: #F0F0F000;
+    border-color: #FFFFFF;
+}
+
+.scatter-graph-block-circle {
+    border-color: #C6C7D1;
+}
+
+.scout-assignments-frame {
+    border-left-color: #E6E6FA29;
+    border-right-color: #E6E6FA29;
+    border-top-color: #E6E6FA29;
+    border-bottom-color: #E6E6FA29;
+}
+
+.scroller-default .unity-scroller__slider {
+    background-color: #FFFFFF59;
+}
+
+.segmented-horizontal-radio-group .sicontainer_horizontal_align {
+    -unity-background-image-tint-color: #FFFFFF00;
+}
+
+.selected-club-to-manage .sibutton {
+    border-color: #FFA528;
+}
+
+.settings-preferences-sliders-blocks .sislider--tracker {
+    background-color: #7E7E7E;
+    border-color: #646464;
+}
+
+.shortlist-top-bar-no-border {
+    border-color: #E6E6FA29;
+    border-left-color: #00000000;
+    border-right-color: #00000000;
+    border-top-color: #00000000;
+    border-bottom-color: #00000000;
+}
+
+.shuffle-draft-background-overlay-default {
+    background-color: #00000033;
+}
+
+.shuffle-draft-continue-button-waiting {
+    background-color: #570DA8;
+}
+
+.shuffle-draft-continue-button-waiting .continue-button---gradient, .shuffle-draft-continue-button-paused .continue-button---gradient {
+    --start-colour: #0D67A2;
+    --end-colour: #0D67A2;
+}
+
+.shuffle-draft-player-tile--you-drafted .data_display-draft-player-selection-label {
+    background-color: #0B568852;
+}
+
+.shuffle-draft-player-tile-unselected-tint {
+    -unity-background-image-tint-color: #808080;
+    background-color: #00000040;
+}
+
+.shuffle-draft-removing-indicator > #data_display-graph-progress_timeline-progress_indicator > #VisualElement {
+    background-color: #C46B63;
+}
+
+.shuffledraft-help-panel-background {
+    background-color: #16181DE5;
+}
+
+.si-radio-group-override .player_search_transfer_interest_radio {
+    --unity-selection-color: #3D80DFA6;
+}
+
+.sibutton.agent-offer-player-item {
+    background-color: #00000000;
+}
+
+.sibutton.no-styling {
+    border-color: #00000000;
+    background-color: #00000000;
+}
+
+.sibutton.tactical-tweak-player-row__row-button, .sibutton.tactical-tweak-row__row-button {
+    background-color: #00000000;
+}
+
+.sigradient.default-news-item {
+    --start-colour: #2327351A;
+    --end-colour: #23273533;
+}
+
+.small-radial-gauge-black-lines .sisegemntedradialgauge {
+    --line-colour: #000000;
+}
+
+.speakto-advice-gradient {
+    --start-colour: #5F108459;
+}
+
+.speakto-button-interaction-button-choices-dropdown > .si-dropdown__selection-field {
+    background-color: #00000000;
+}
+
+.speakto-button-interaction-button-exit-property-1-default {
+    color: #FFFFFF;
+}
+
+.speakto-button-interaction-button-tag-induction-gradient {
+    --start-colour: #1D9410;
+    --end-colour: #1D941059;
+}
+
+.speakto-button-interaction-button-tag-promise-gradient {
+    --start-colour: #8D1363;
+    --end-colour: #8D136359;
+}
+
+.speakto-button-interaction-button-tag-target-gradient {
+    --start-colour: #08397D;
+    --end-colour: #08397D59;
+}
+
+.speakto-induction-gradient {
+    --start-colour: #BFED2600;
+    --end-colour: #BFED263D;
+}
+
+.speakto-required-gradient {
+    --start-colour: #FF994300;
+    --end-colour: #FF994359;
+}
+
+.speech-bubble-major-warning-colour {
+    background-color: #FFFFFF00;
+}
+
+.speech-bubble-major-warning-gradient {
+    --start-colour: #F5861059;
+    --end-colour: #F5861033;
+}
+
+.speech-bubble-minor-warning-colour {
+    background-color: #FFFFFF00;
+}
+
+.speech-bubble-minor-warning-gradient {
+    --start-colour: #C2E02859;
+    --end-colour: #C2E02833;
+}
+
+.speech-bubble-negative-colour {
+    background-color: #FFFFFF00;
+}
+
+.speech-bubble-negative-gradient {
+    --start-colour: #F22C2C59;
+    --end-colour: #F22C2C33;
+}
+
+.speech-bubble-no-gradient {
+    --start-colour: #FFFFFF00;
+    --end-colour: #FFFFFF00;
+}
+
+.speech-bubble-positive-colour {
+    background-color: #FFFFFF00;
+}
+
+.speech-bubble-positive-gradient {
+    --start-colour: #65E53A59;
+    --end-colour: #65E53A33;
+}
+
+.spider-graph-label {
+    color: #FAFAFAA6;
+}
+
+.startnewcareer_custom_bg_tile .layout-tile-interaction-button, .startnewcareer_custom_bg_tile .layout-tile-base-container {
+    background-color: #00000000;
+}
+
+.surfaces-card-tile-border.startscreenVar {
+    background-color: #FFFFFF00;
+}
+
+.tab-button-group .tabgroup__tab, .tab-button-group .buttongroup__button {
+    color: #FFFFFF;
+    background-color: #BCBCBC00;
+}
+
+.tab-button-group .unity-radio-button-group__child-active .navigation-tab-default-default--active-false .heading-md {
+    color: #FFFFFF;
+}
+
+.tactical-tweak-player-row__active-count {
+    color: #00B2B2;
+}
+
+.tactical-tweak-player-row__name {
+    color: #EBEBEB;
+}
+
+.tactical-tweak-player-row__shirt-badge-fill {
+    border-color: #00000000;
+}
+
+.tactical-tweak-row--active .tactical-tweak-row__icon-badge {
+    border-color: #00B2B2;
+}
+
+.tactical-tweak-row--active .tactical-tweak-row__indicator {
+    background-color: #00B2B2;
+}
+
+.tactical-tweak-row--active .tactical-tweak-row__title {
+    color: #00B2B2;
+}
+
+.tactical-tweak-row--active.tactical-tweak-row--conflict .tactical-tweak-row__icon-badge, .tactical-tweak-row--pending-apply.tactical-tweak-row--conflict .tactical-tweak-row__icon-badge {
+    border-color: #DC3C3C;
+}
+
+.tactical-tweak-row--active.tactical-tweak-row--conflict .tactical-tweak-row__indicator, .tactical-tweak-row--pending-apply.tactical-tweak-row--conflict .tactical-tweak-row__indicator {
+    background-color: #DC3C3C;
+}
+
+.tactical-tweak-row--active.tactical-tweak-row--conflict .tactical-tweak-row__title, .tactical-tweak-row--pending-apply.tactical-tweak-row--conflict .tactical-tweak-row__title {
+    color: #DC3C3C;
+}
+
+.tactical-tweak-row--disabled {
+    background-color: #FFFFFF05;
+}
+
+.tactical-tweak-row--disabled .tactical-tweak-row__title {
+    color: #787878;
+}
+
+.tactical-tweak-row__cancel-button {
+    background-color: #FFFFFF1A;
+}
+
+.tactical-tweak-row__icon-badge {
+    border-color: #00000000;
+    background-color: #0D0E11A6;
+}
+
+.tactical-tweak-row__instruct-pill, .tactical-tweak-row__instructing-pill {
+    background-color: #00756B;
+}
+
+.tactical-tweak-row__instructing-pill, .tactical-tweak-row__stopping-pill {
+    background-color: #FFFFFF1A;
+}
+
+.tactical-tweak-row__pill-label {
+    color: #FFFFFF;
+}
+
+.tactical-tweak-row__stop-pill, .tactical-tweak-row__stopping-pill {
+    background-color: #AA0000;
+}
+
+.tactical-tweak-row__title {
+    color: #EBEBEB;
+}
+
+.tactical-tweaks-badge {
+    color: #FFFFFF;
+    background-color: #004AAA;
+}
+
+.tactical-tweaks-tab {
+    border-bottom-color: #00000000;
+}
+
+.tactical-tweaks-tab--active-true {
+    border-bottom-color: #00B2B2;
+}
+
+.tactical-tweaks-tab__badge {
+    background-color: #00756B;
+}
+
+.tactics-collapsable-pitch-border {
+    border-color: #32755D;
+}
+
+.tactics-collapsable-pitch-container {
+    background-color: #036150;
+    border-color: #32755D;
+}
+
+.tactics-collapsable-pitch-container-with-darker-header {
+    background-color: #036150;
+    border-color: #32755D;
+}
+
+.tactics-collapsable-pitch-header {
+    background-color: #0E4740;
+    border-color: #0E4740;
+}
+
+.tactics-nav-secondary-actions-property-1-team-shape {
+    background-color: #0A0F1E33;
+}
+
+.tactics-overlay-bkg {
+    background-color: #00000033;
+}
+
+.tactics-pitch-grass-lines-colour {
+    --grass-colour: #0A0F1E24;
+}
+
+.tactics-pitch-visualiser-property-1-ip-oop {
+    border-color: #32755D;
+    background-color: #036150;
+}
+
+.tactics-row-highlight-highlighted {
+    background-color: #12665880;
+}
+
+.tactics-row-highlight-sent-off {
+    background-color: #B7000580;
+}
+
+.tactics-row-highlight-unavailable {
+    background-color: #B700054D;
+}
+
+.tactics-simplified-position-indicator-bottom {
+    border-color: #00000033;
+}
+
+.tactics-simplified-position-indicator-top {
+    border-color: #00000033;
+}
+
+.tactics-statusicon .scaling-icons-condition-level-injured-size-small-16px, .tactics-statusicon .game-concepts-abroad-plane_small, .tactics-statusicon .game-concepts-red-card_small, .tactics-statusicon .restricted-low {
+    background-color: #036150;
+}
+
+.tactics-subs-block {
+    background-color: #036150;
+}
+
+.tactics-subs-block-cell-unavailable {
+    background-color: #FF2A2A4D;
+}
+
+.tactics-visualiser-pitch-preview {
+    border-color: #00818A;
+    background-color: #177564;
+}
+
+.tactics-visualiser-player-bottom-border {
+    background-color: #000000;
+    border-right-color: #0000008F;
+    border-bottom-color: #0000008F;
+    border-left-color: #0000008F;
+}
+
+.tactics-visualiser-player-position-type-gk:hover {
+    background-color: #4A4A4A;
+}
+
+.tactics-visualiser-tactical-analysis-pitch-segment-coverage-area-coverage-n-a {
+    background-color: #01010129;
+}
+
+.tactics-visualiser-warning-container {
+    background-color: #00000080;
+}
+
+.team-instruction-cell--tweaked {
+    background-color: #02A19433;
+}
+
+.team-report-goal-analysis-positions-item-no-goals {
+    border-color: #000000D9;
+    background-color: #161616;
+}
+
+.team-report-segmented-bar-chart-segment-container-element {
+    border-color: #E6E6FA33;
+    background-color: #FFFFFF00;
+}
+
+.thumbnail-work-permit-esc-vacant {
+    background-color: #646464;
+}
+
+.tile-states-match-2d-pitch-12x4 {
+    --grass-colour: #0A0F1E24;
+    background-color: #0C513A;
+}
+
+.tile-states-match-simulation-hero-2d {
+    background-color: #0C513A;
+}
+
+.tile-states-match-simulation-hero-2d-fullscreen {
+    background-color: #0C513A;
+}
+
+.tile-states-match-simulation-hero-2d-fullscreen-phone {
+    background-color: #0C513A;
+}
+
+.tile-states-match-simulation-hero-2d-pitch {
+    --grass-colour: #0A0F1E24;
+}
+
+.tile-states-tile-states-match-simulation-hero-min-res {
+    background-color: #0C513A;
+}
+
+.tiles-players-meetings--type-standard {
+    border-color: #E6E6FA33;
+}
+
+.tool-messages-list {
+    background-color: #00000000;
+}
+
+.tournament-position-item {
+    background-color: #FFFFFF29;
+}
+
+.training-improvement-good-color {
+    color: #E6F51A;
+}
+
+.training-improvement-poor-color {
+    color: #F6CF0C;
+}
+
+.training-improvement-terrible-color {
+    color: #F22C2C;
+}
+
+.training-improvement-very-good-color {
+    color: #AED431;
+}
+
+.transfer-budget-banner-over-budget {
+    background-color: #FE9E6B52;
+}
+
+.transfer-loan-offer-footer-frame-cost-invalid {
+    background-color: #FF418029;
+}
+
+.transfer-news-property-1-closed {
+    background-color: #AA000033;
+}
+
+.transfer-news-property-1-open {
+    background-color: #0B720033;
+}
+
+.transfer-news-property-1-restriet {
+    background-color: #6D6A03;
+}
+
+.transfer-offer-tabgroup {
+    background-color: #E6E6FA0A;
+}
+
+.tutorial-floating-continue-button-back-part {
+    border-color: #0A0F1E33;
+    background-color: #23273524;
+}
+
+.tutorial-floating-continue-button-back-part:hover, .tutorial-floating-continue-button-back-part:active:enabled {
+    background-color: #23273524;
+}
+
+.tutorial-floating-continue-button-continue-part {
+    border-color: #0A0F1E33;
+}
+
+.tutorial-floating-continue-button-continue-part-disabled {
+    border-color: #0A0F1E33;
+    background-color: #23273524;
+}
+
+.ui-icon-no-fill-background, .ui-icon-no-fill-background:disabled {
+    background-color: #FFFFFF00;
+    border-color: #FFFFFF00;
+}
+
+.work-permit-esc-vacant-image {
+    -unity-background-image-tint-color: #C3C3C357;
+}
+
+.xg-non-human-team {
+    background-color: #FF5A2829;
+}
+
+.year-header {
+    border-color: #FFFFFF59;
+}
+
+.yellow-card {
+    background-color: #FFCD00;
+}
+
+.z-border-hover-selection {
+    background-color: #E6E6FA00;
+}
+
+.z-border-hover-selection:hover, .z-border-hover-selection:active:enabled {
+    background-color: #E6E6FA0A;
+}
+
+.transfer-activity-offer-status-confirmation {
+    color: #EEB477;
+    -unity-background-image-tint-color: #EEB477;
+}
+
+.transfer-activity-offer-status-rejected {
+    color: #FFC2C2;
+    -unity-background-image-tint-color: #FFC2C2;
+}
+
+.transfer-activity-offer-status-contract {
+    color: #BBF2ED;
+    -unity-background-image-tint-color: #BBF2ED;
+}
+
+.transfer-activity-offer-status-join-or-leave {
+    color: #DFEEB0;
+    -unity-background-image-tint-color: #DFEEB0;
+}
+
+.squad-depth-fmc-good-depth-border-colour {
+    border-color: #02A194;
+}
+
+.squad-depth-fmc-good-depth-colour {
+    border-color: #02A194;
+}
+
+.squad-depth-fmc-pitch-container {
+    background-color: #0C433A;
+}
+
+.squad-depth-pitch-component {
+    background-color: #24463E;
+}
+
+.background-tint {
+    background-color: #000000D9;
+}
+
+.sisegemntedradialgauge-tactical-effectiveness {
+    --line-colour: #5F6A6F;
+}
+
+.table-row-disabled .unity-image {
+    -unity-background-image-tint-color: #000000;
+    color: #000000;
+}
+
+FMPitchPositionIcon {
+    --pitch-position-striker-colour: #990000;
+    --pitch-position-attacking-midfielder-colour: #D98000;
+    --pitch-position-midfielder-colour: #005200;
+    --pitch-position-defensive-midfielder-colour: #1A80E6;
+    --pitch-position-defender-colour: #004073;
+    --pitch-position-goalkeeper-colour: #4000BF;
+}
+

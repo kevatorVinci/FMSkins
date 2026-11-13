@@ -1,0 +1,158 @@
+:root {
+    --colours-tactics-base-00: #959491;
+    --colours-tactics-base-20: #7D7C78;
+    --colours-tactics-base-40: #5C5A58;
+    --colours-tactics-base-50: #3C3B39;
+    --colours-tactics-base-60: #232221;
+    --colours-tactics-base-80: #171616;
+    --colours-feature-tactics-base-20: #7D7C78;
+    --colours-feature-tactics-base-20-a16: #7D7C7829;
+    --colours-feature-tactics-base-40: #5C5A58;
+    --colours-feature-tactics-base-50: #3C3B39;
+    --colours-feature-tactics-base-60: #232221;
+    --colours-feature-tactics-base-80: #171616;
+    --colours-tactics-teaminstruction-background: #3C3B39;
+    --visualiser-pitch-thematic-background: #3C3B39;
+    --interaction-tactics-surface-default: #5C5A58;
+    --interaction-tactics-surface-hover: #7D7C78;
+}
+
+.tactics-pitch-block {
+    border-left-color: #6A6967;
+    border-right-color: #6A6967;
+    border-top-color: #6A6967;
+    border-bottom-color: #6A6967;
+}
+
+.buttons-button-primary-tactics {
+    background-color: #5C5A58;
+}
+
+.fmc-recruitment-focus-list-button .sicontainer_horizontal_align {
+    background-color: #7D7C780D;
+}
+
+.fmc-recruitment-focus-list-button .virtualised-list__item--selected {
+    background-color: #5C5A5880;
+}
+
+.frame-tactics-nav-menu {
+    border-color: #6A6967;
+}
+
+.player_position_dropdown .micro-pitch-parent {
+    background-color: #696865;
+}
+
+.recruitment-focus-header {
+    background-color: #7D7C780D;
+}
+
+.tactics-collapsable-pitch-border {
+    border-color: #6A6967;
+}
+
+.tactics-collapsable-pitch-container {
+    background-color: #575552;
+    border-color: #6A6967;
+}
+
+.tactics-collapsable-pitch-container-with-darker-header {
+    background-color: #575552;
+    border-color: #6A6967;
+}
+
+.tactics-pitch-visualiser-property-1-ip-oop {
+    border-color: #6A6967;
+    background-color: #575552;
+}
+
+.tactics-row-highlight-highlighted {
+    background-color: #5C5A5880;
+}
+
+.tactics-statusicon .scaling-icons-condition-level-injured-size-small-16px, .tactics-statusicon .game-concepts-abroad-plane_small, .tactics-statusicon .game-concepts-red-card_small, .tactics-statusicon .restricted-low {
+    background-color: #575552;
+}
+
+.tactics-subs-block {
+    background-color: #575552;
+}
+
+.tactics-visualiser-pitch-preview {
+    background-color: #696865;
+}
+
+.squad-depth-fmc-pitch-container {
+    background-color: #3C3B39;
+}
+
+.frame-tactics-nav-menu {
+    border-color: #6A6967;
+}
+
+.tactics-nav-primary-actions-property-1-base {
+    background-color: #585754;
+}
+
+.tactics-nav-secondary-actions-property-1-team-shape {
+    background-color: #4A4947;
+}
+
+.tactics-radio-buttons .unity-radio-button-group__child-active, .tactics-radio-buttons .list-item-radio-button-style.unity-radio-button-group__child-active:hover {
+    border-color: #C7C7C5;
+}
+
+
+.tactics-collapsable-pitch-grass-colour {
+    background-image: var(--bild-rasen);
+}
+.tactics-collapsable-pitch-container, .tactics-collapsable-pitch-container-with-darker-header,
+.tactics-subs-block {
+    background-color: #00000000;
+    background-image: var(--bild-blatt);
+    -unity-slice-left: 40;
+    -unity-slice-right: 40;
+    -unity-slice-top: 40;
+    -unity-slice-bottom: 40;
+    -unity-slice-type: tiled;
+    -unity-slice-scale: 0.5;
+    -unity-background-image-tint-color: #DCDCDC;
+    border-width: 0;
+    border-radius: 0;
+}
+.tactics-nav-primary-actions-property-1-base, .tactics-nav-secondary-actions-property-1-team-shape {
+    background-image: var(--bild-flaeche);
+    -unity-slice-left: 1;
+    -unity-slice-right: 1;
+    -unity-slice-top: 1;
+    -unity-slice-bottom: 1;
+    -unity-slice-type: tiled;
+    -unity-background-image-tint-color: #DCDCDC;
+}
+/* SI's code gradient behind the rows showed as fine green lines in the joints (seen in game 23.10.2026): the
+   rows overlap by 2 px and the gradient colours are set to paper as well. */
+.tactics-nav-primary-actions-property-1-base {
+    margin-bottom: -2px;
+}
+.tactics-nav-secondary-actions-property-1-team-shape {
+    flex-grow: 1;
+    border-radius: 0;
+}
+.frame-tactics-nav-menu {
+    border-width: 0;
+    border-radius: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    --start-colour: #2F2B27;
+    --end-colour: #2F2B27;
+    background-image: var(--bild-flaeche);
+    -unity-slice-left: 1;
+    -unity-slice-right: 1;
+    -unity-slice-top: 1;
+    -unity-slice-bottom: 1;
+    -unity-slice-type: tiled;
+    -unity-background-image-tint-color: #DCDCDC;
+}

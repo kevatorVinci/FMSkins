@@ -1,0 +1,850 @@
+/* OPTIONNEL - aspect "papier" des écrans tactiques (panneaux clairs, texte encre).
+   Pas activé par défaut : sur l'interface de base, une partie des textes du jeu reste blanche
+   et peut devenir illisible sur le papier. Pour l'essayer, ajoute "tactique-papier.uss" à la fin de "Sheets" dans skin.json. */
+
+:root {
+    --colours-tactics-defender-foreground: #039B8E;
+    --colours-tactics-defensive-midfield-foreground: #12A359;
+    --colours-tactics-midfield-foreground: #92BDF8;
+    --colours-tactics-attacking-midfield-foreground: #DBA6F4;
+    --colours-tactics-striker-foreground: #EF87CB;
+    --colours-tactics-goalkeeper-foreground: #B5B5CD;
+    --colours-tactics-phase-highlight-background: #1C1A161A;
+    --colours-tactics-base-00: #147464;
+    --colours-tactics-base-20: #188B78;
+    --colours-tactics-base-40: #1FAD96;
+    --colours-tactics-base-50: #25D1B5;
+    --colours-tactics-base-60: #82E9D9;
+    --colours-tactics-base-80: #B6F1E6;
+    --colours-tactics-green-20: #1D5217;
+    --colours-tactics-green-40: #1D5217;
+    --colours-tactics-green-50: #46C638;
+    --colours-tactics-green-60: #A7E4A0;
+    --colours-tactics-green-80: #A7E4A0;
+    --pitch-tile-default-background: #06B493;
+    --colours-feature-tactics-base-20: #188B78;
+    --colours-feature-tactics-base-20-a16: #188B7829;
+    --colours-feature-tactics-base-40: #1FAD96;
+    --colours-feature-tactics-base-50: #25D1B5;
+    --colours-feature-tactics-base-60: #82E9D9;
+    --colours-feature-tactics-base-80: #B6F1E6;
+    --colours-tactics-defender-background: #009F92;
+    --colours-tactics-defensive-midfield-background: #11AB00;
+    --colours-tactics-midfield-background: #65A8FF;
+    --colours-tactics-attacking-midfield-background: #D479FF;
+    --colours-tactics-striker-background: #FF46BF;
+    --colours-tactics-goalkeeper-background: #9C9481;
+    --colours-tactics-tweak-pending: #0262E0;
+    --colours-tactics-tweak-pending-background: #1874EC29;
+    --colours-tactics-teaminstruction-background: #25D1B5;
+    --tactics-visualiser-player-suitability-natural: #0D4507;
+    --tactics-visualiser-player-suitability-accomplished: #283605;
+    --tactics-visualiser-player-suitability-competent: #292F03;
+    --tactics-visualiser-player-suitability-unconvincing: #403501;
+    --tactics-visualiser-player-suitability-awkward: #8E4B04;
+    --tactics-visualiser-player-suitability-makeshift: #B73905;
+    --tactics-visualiser-player-suitability-poor: #D70303;
+    --visualiser-pitch-accent-background: #1C1A1614;
+    --visualiser-pitch-accent-border: #1C1A1659;
+    --visualiser-pitch-accent-pitch-lines: #1C1A1629;
+    --visualiser-pitch-default-border: #1C1A1659;
+    --visualiser-pitch-default-background: #1C1A1600;
+    --visualiser-pitch-default-pitch-lines: #1C1A1614;
+    --visualiser-pitch-thematic-background: #25D1B5;
+    --visualiser-pitch-thematic-pitch-lines: #1C1A1659;
+    --visualiser-pitch-thematic-border: #1C1A16;
+    --interaction-tactics-border-default: #1C1A1659;
+    --interaction-tactics-surface-default: #1FAD96;
+    --interaction-tactics-surface-disabled: #0D0E11A6;
+    --interaction-tactics-surface-hover: #188B78;
+}
+
+/* ---- repris de heft-regeln.uss ---- */
+.tactics-multiple-choice-options-button SIButton {
+    background-color: #9A555500;
+}
+
+.tactics-option-base {
+    background-color: #9A555500;
+}
+
+.tactics-pitch-block {
+    border-left-color: #439C7C;
+    border-right-color: #439C7C;
+    border-top-color: #439C7C;
+    border-bottom-color: #439C7C;
+}
+
+#adaptive-formation-dropdown > .si-dropdown__selection-field, #adaptive-formation-dropdown-default > .si-dropdown__selection-field, #adaptive-formation-dropdown-default-no-oop > .si-dropdown__selection-field, #adaptive-formation-dropdown-ai > .si-dropdown__selection-field, #adaptive-formation-dropdown-human > .si-dropdown__selection-field {
+    background-color: #1C1A1600;
+    border-color: #1C1A1600;
+}
+
+.buttons-button-primary-tactics {
+    border-color: #084827;
+    background-color: #1FAD96;
+}
+
+.buttons-button-tactic-phase {
+    background-color: #00000000;
+}
+
+.data_display-names-overview-pitch-indicator-regular-spacing-wide:hover .text-container {
+    border-color: #0A0F1E8F;
+    background-color: #0A0F1E8F;
+}
+
+.frame-324-tactics-visualiser-pitch-default {
+    background-color: #2DBA94;
+}
+
+.frame-330-tactics-visualiser-player-indicator {
+    background-color: #00000000;
+}
+
+.frame-tactics-nav-menu {
+    border-color: #439C7C;
+}
+
+.greyed-out-background-colour, .tactical-tweak-player-row--hovered {
+    background-color: #1C1A160A;
+}
+
+.layout-tile-interaction-button.startscreenVar, .layout-tile-tactics .layout-tile-interaction-button, .recruitment-player-scouted-grade-header--no-report {
+    background-color: #1C1A1614;
+}
+
+.layout-tile-interaction-button.startscreenVar:active:enabled, .layout-tile-interaction-button.startscreenVar:hover, .layout-tile-tactics .layout-tile-interaction-button:active:enabled, .layout-tile-tactics .layout-tile-interaction-button:hover, .startnewcareer_custom_bg_tile .layout-tile-interaction-button:active:enabled, .startnewcareer_custom_bg_tile .layout-tile-interaction-button:hover {
+    background-color: #1C1A161F;
+}
+
+.match-pitch-grass-colour {
+    background-color: #1DC58D;
+}
+
+.navigatable-tactics-empty-position-button {
+    border-color: #00000000;
+    background-color: #00000000;
+}
+
+.navigatable-tactics-position {
+    background-color: #00000000;
+}
+
+.pitch-lines-fm {
+    --pitch-line-color: #61616133;
+}
+
+.pitch-position-icon-dark {
+    background-color: #2F9557;
+}
+
+.pitch-position-icon-issue {
+    --pitch-position-striker-colour: #FF1717;
+    --pitch-position-attacking-midfielder-colour: #FF1717;
+    --pitch-position-midfielder-colour: #FF1717;
+    --pitch-position-defensive-midfielder-colour: #FF1717;
+    --pitch-position-defender-colour: #FF1717;
+    --pitch-position-goalkeeper-colour: #7C3800;
+}
+
+.pitch-position-icon-lime {
+    background-color: #3DC846B5;
+}
+
+.pitch-position-icon-picked {
+    --pitch-position-goalkeeper-colour: #F9F8F7;
+}
+
+.player_position_dropdown .micro-pitch-parent {
+    background-color: #1F9F88;
+}
+
+.position--filled--selected .data_display-names-overview-pitch-indicator-regular-spacing-wide .text-container {
+    border-color: #1C1A1659;
+    background-color: #42AAF0;
+}
+
+.sibutton.tactical-tweak-player-row__row-button, .sibutton.tactical-tweak-row__row-button {
+    background-color: #00000000;
+}
+
+.tactical-tweak-player-row__active-count {
+    color: #006868;
+}
+
+.tactical-tweak-player-row__name {
+    color: #292720;
+}
+
+.tactical-tweak-player-row__shirt-badge-fill {
+    border-color: #00000000;
+}
+
+.tactical-tweak-row--active .tactical-tweak-row__icon-badge {
+    border-color: #006868;
+}
+
+.tactical-tweak-row--active .tactical-tweak-row__indicator {
+    background-color: #006868;
+}
+
+.tactical-tweak-row--active .tactical-tweak-row__title {
+    color: #006868;
+}
+
+.tactical-tweak-row--active.tactical-tweak-row--conflict .tactical-tweak-row__icon-badge, .tactical-tweak-row--pending-apply.tactical-tweak-row--conflict .tactical-tweak-row__icon-badge {
+    border-color: #DF4B4B;
+}
+
+.tactical-tweak-row--active.tactical-tweak-row--conflict .tactical-tweak-row__indicator, .tactical-tweak-row--pending-apply.tactical-tweak-row--conflict .tactical-tweak-row__indicator {
+    background-color: #DF4B4B;
+}
+
+.tactical-tweak-row--active.tactical-tweak-row--conflict .tactical-tweak-row__title, .tactical-tweak-row--pending-apply.tactical-tweak-row--conflict .tactical-tweak-row__title {
+    color: #DF4B4B;
+}
+
+.tactical-tweak-row--disabled {
+    background-color: #1C1A1605;
+}
+
+.tactical-tweak-row--disabled .tactical-tweak-row__title {
+    color: #877E6A;
+}
+
+.tactical-tweak-row__cancel-button {
+    background-color: #1C1A161A;
+}
+
+.tactical-tweak-row__icon-badge {
+    border-color: #00000000;
+    background-color: #0D0E11A6;
+}
+
+.tactical-tweak-row__instruct-pill, .tactical-tweak-row__instructing-pill {
+    background-color: #009F92;
+}
+
+.tactical-tweak-row__instructing-pill, .tactical-tweak-row__stopping-pill {
+    background-color: #1C1A161A;
+}
+
+.tactical-tweak-row__pill-label {
+    color: #1C1A16;
+}
+
+.tactical-tweak-row__stop-pill, .tactical-tweak-row__stopping-pill {
+    background-color: #FF7979;
+}
+
+.tactical-tweak-row__title {
+    color: #292720;
+}
+
+.tactical-tweaks-badge {
+    color: #1C1A16;
+    background-color: #65A8FF;
+}
+
+.tactical-tweaks-tab {
+    border-bottom-color: #00000000;
+}
+
+.tactical-tweaks-tab--active-true {
+    border-bottom-color: #006868;
+}
+
+.tactical-tweaks-tab__badge {
+    background-color: #009F92;
+}
+
+.tactics-collapsable-pitch-border {
+    border-color: #439C7C;
+}
+
+.tactics-collapsable-pitch-container {
+    background-color: #06B495;
+    border-color: #439C7C;
+}
+
+.tactics-collapsable-pitch-container-with-darker-header {
+    background-color: #06B495;
+    border-color: #439C7C;
+}
+
+.tactics-collapsable-pitch-header {
+    background-color: #28CCB8;
+    border-color: #28CCB8;
+}
+
+.tactics-nav-secondary-actions-property-1-team-shape {
+    background-color: #0A0F1E33;
+}
+
+.tactics-overlay-bkg {
+    background-color: #00000033;
+}
+
+.tactics-pitch-grass-lines-colour {
+    --grass-colour: #0A0F1E24;
+}
+
+.tactics-pitch-visualiser-property-1-ip-oop {
+    border-color: #439C7C;
+    background-color: #06B495;
+}
+
+.tactics-row-highlight-highlighted {
+    background-color: #12665880;
+}
+
+.tactics-row-highlight-sent-off {
+    background-color: #B7000580;
+}
+
+.tactics-row-highlight-unavailable {
+    background-color: #B700054D;
+}
+
+.tactics-simplified-position-indicator-bottom {
+    border-color: #00000033;
+}
+
+.tactics-simplified-position-indicator-top {
+    border-color: #00000033;
+}
+
+.tactics-statusicon .scaling-icons-condition-level-injured-size-small-16px, .tactics-statusicon .game-concepts-abroad-plane_small, .tactics-statusicon .game-concepts-red-card_small, .tactics-statusicon .restricted-low {
+    background-color: #06B495;
+}
+
+.tactics-subs-block {
+    background-color: #06B495;
+}
+
+.tactics-subs-block-cell-unavailable {
+    background-color: #FF2A2A4D;
+}
+
+.tactics-visualiser-pitch-preview {
+    border-color: #00909A;
+    background-color: #1F9F88;
+}
+
+.tactics-visualiser-player-bottom-border {
+    background-color: #F9F8F7;
+    border-right-color: #0000008F;
+    border-bottom-color: #0000008F;
+    border-left-color: #0000008F;
+}
+
+.tactics-visualiser-player-position-type-gk:hover {
+    background-color: #B1AA9B;
+}
+
+.tactics-visualiser-tactical-analysis-pitch-segment-coverage-area-coverage-n-a {
+    background-color: #01010129;
+}
+
+.tactics-visualiser-warning-container {
+    background-color: #00000080;
+}
+
+.tile-states-match-2d-pitch-12x4 {
+    --grass-colour: #0A0F1E24;
+    background-color: #1DC58D;
+}
+
+.tile-states-match-simulation-hero-2d-pitch {
+    --grass-colour: #0A0F1E24;
+}
+
+.squad-depth-fmc-pitch-container {
+    background-color: #25D1B5;
+}
+
+.squad-depth-pitch-component {
+    background-color: #86C1B3;
+}
+
+.sisegemntedradialgauge-tactical-effectiveness {
+    --line-colour: #958D79;
+}
+
+FMPitchPositionIcon {
+    --pitch-position-striker-colour: #FF8989;
+    --pitch-position-attacking-midfielder-colour: #945700;
+    --pitch-position-midfielder-colour: #00CC00;
+    --pitch-position-defensive-midfielder-colour: #1879DA;
+    --pitch-position-defender-colour: #6CBEFF;
+    --pitch-position-goalkeeper-colour: #C6A9FF;
+}
+
+/* ---- repris de heft-papier.uss ---- */
+/* The tactics tile paints its base container green (--pitch-tile-default-background), which showed through
+   the torn edge (seen in game 23.10.2026). */
+.layout-tile-tactics .layout-tile-base-container {
+    background-color: #00000000;
+}
+
+/* ---- repris de heft-taktik.uss ---- */
+:root {
+    --colours-tactics-base-00: #6D6656;
+    --colours-tactics-base-20: #837B67;
+    --colours-tactics-base-40: #A29A88;
+    --colours-tactics-base-50: #BFBAAE;
+    --colours-tactics-base-60: #DAD7D0;
+    --colours-tactics-base-80: #E8E6E1;
+    --colours-feature-tactics-base-20: #837B67;
+    --colours-feature-tactics-base-20-a16: #7D7C7829;
+    --colours-feature-tactics-base-40: #A29A88;
+    --colours-feature-tactics-base-50: #BFBAAE;
+    --colours-feature-tactics-base-60: #DAD7D0;
+    --colours-feature-tactics-base-80: #E8E6E1;
+    --colours-tactics-teaminstruction-background: #BFBAAE;
+    --visualiser-pitch-thematic-background: #BFBAAE;
+    --interaction-tactics-surface-default: #A29A88;
+    --interaction-tactics-surface-hover: #837B67;
+}
+
+.tactics-pitch-block {
+    border-left-color: #958C78;
+    border-right-color: #958C78;
+    border-top-color: #958C78;
+    border-bottom-color: #958C78;
+}
+
+.buttons-button-primary-tactics {
+    background-color: #A29A88;
+}
+
+.fmc-recruitment-focus-list-button .sicontainer_horizontal_align {
+    background-color: #7D7C780D;
+}
+
+.fmc-recruitment-focus-list-button .virtualised-list__item--selected {
+    background-color: #5C5A5880;
+}
+
+.frame-tactics-nav-menu {
+    border-color: #958C78;
+}
+
+.player_position_dropdown .micro-pitch-parent {
+    background-color: #968D79;
+}
+
+.recruitment-focus-header {
+    background-color: #7D7C780D;
+}
+
+.tactics-collapsable-pitch-border {
+    border-color: #958C78;
+}
+
+.tactics-collapsable-pitch-container {
+    background-color: #A69F8E;
+    border-color: #958C78;
+}
+
+.tactics-collapsable-pitch-container-with-darker-header {
+    background-color: #A69F8E;
+    border-color: #958C78;
+}
+
+.tactics-pitch-visualiser-property-1-ip-oop {
+    border-color: #958C78;
+    background-color: #A69F8E;
+}
+
+.tactics-row-highlight-highlighted {
+    background-color: #5C5A5880;
+}
+
+.tactics-statusicon .scaling-icons-condition-level-injured-size-small-16px, .tactics-statusicon .game-concepts-abroad-plane_small, .tactics-statusicon .game-concepts-red-card_small, .tactics-statusicon .restricted-low {
+    background-color: #A69F8E;
+}
+
+.tactics-subs-block {
+    background-color: #A69F8E;
+}
+
+.tactics-visualiser-pitch-preview {
+    background-color: #968D79;
+}
+
+.squad-depth-fmc-pitch-container {
+    background-color: #BFBAAE;
+}
+
+.frame-tactics-nav-menu {
+    border-color: #958C78;
+}
+
+.tactics-nav-primary-actions-property-1-base {
+    background-color: #A59D8C;
+}
+
+.tactics-nav-secondary-actions-property-1-team-shape {
+    background-color: #B2AB9D;
+}
+
+.tactics-radio-buttons .unity-radio-button-group__child-active, .tactics-radio-buttons .list-item-radio-button-style.unity-radio-button-group__child-active:hover {
+    border-color: #433F35;
+}
+
+.tactics-collapsable-pitch-container, .tactics-collapsable-pitch-container-with-darker-header,
+.tactics-subs-block {
+    background-color: #00000000;
+    background-image: var(--bild-blatt);
+    -unity-slice-left: 40;
+    -unity-slice-right: 40;
+    -unity-slice-top: 40;
+    -unity-slice-bottom: 40;
+    -unity-slice-type: tiled;
+    -unity-slice-scale: 0.5;
+    -unity-background-image-tint-color: #F7F7F7;
+    border-width: 0;
+    border-radius: 0;
+}
+
+.tactics-nav-primary-actions-property-1-base, .tactics-nav-secondary-actions-property-1-team-shape {
+    background-image: var(--bild-flaeche);
+    -unity-slice-left: 1;
+    -unity-slice-right: 1;
+    -unity-slice-top: 1;
+    -unity-slice-bottom: 1;
+    -unity-slice-type: tiled;
+    -unity-background-image-tint-color: #F7F7F7;
+}
+
+/* SI's code gradient behind the rows showed as fine green lines in the joints (seen in game 23.10.2026): the
+   rows overlap by 2 px and the gradient colours are set to paper as well. */
+.tactics-nav-primary-actions-property-1-base {
+    margin-bottom: -2px;
+}
+
+.tactics-nav-secondary-actions-property-1-team-shape {
+    flex-grow: 1;
+    border-radius: 0;
+}
+
+.frame-tactics-nav-menu {
+    border-width: 0;
+    border-radius: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    --start-colour: #E1DCCA;
+    --end-colour: #E1DCCA;
+    background-image: var(--bild-flaeche);
+    -unity-slice-left: 1;
+    -unity-slice-right: 1;
+    -unity-slice-top: 1;
+    -unity-slice-bottom: 1;
+    -unity-slice-type: tiled;
+    -unity-background-image-tint-color: #F7F7F7;
+}
+
+/* ---- repris de heft-feinschliff.uss ---- */
+/* Aktiver Taktik-Umschalter: FM schreibt hell auf Farbe, Kontur in Weiss. Aktive Segmente (Mit Ball, Dieser Monat):
+   ihr Grund kommt mal vom Knopf, mal von einem Kindelement, mal hell, mal dunkel. Schrift deshalb in Tinte, aktiv
+   markiert ein Tintenstrich unten wie im Heft (den Rand zeichnet der Knopf selbst, kein Kind deckt ihn). */
+.buttons-button-tactics-toggle-default--toggle-true SIText {
+    -unity-text-outline-color: #FFFFFF;
+}
+
+/* Ausnahme: Reiter der Taktik (Formationen, Teamanweisungen) sind auch eine Segmentgruppe, liegen aber als Reiter auf
+   Papier; aktiv in Tinte. */
+.tactical-tweaks-tabs .tactical-tweaks-tab--active-true.buttongroup__button--active SIText {
+    color: #1C1A16;
+    -unity-text-outline-color: #1C1A16;
+}
+
+#TacticalPlannerTool .components-frames-team-selection-table {
+    background-image: var(--bild-blatt);
+    -unity-slice-scale: 0.8;
+    border-width: 0; /* Papierbild: kein Rahmen ums Blatt */
+}
+
+/* Zurufe und Anpassungen im Spiel: SIs dunkles Klappfeld war gespiegelt ein graues Feld mit dunklen Symbolkästen.
+   Ein Blatt; die Symbole stehen in Tinte auf einem Hauch Tinte. */
+.tactical-tweaks-panel {
+    background-color: #00000000;
+    background-image: var(--bild-blatt);
+    -unity-slice-left: 40;
+    -unity-slice-right: 40;
+    -unity-slice-top: 40;
+    -unity-slice-bottom: 40;
+    -unity-slice-type: tiled;
+    -unity-background-image-tint-color: #F7F7F7;
+    border-width: 0;
+    padding-bottom: 14px; /* die Liste endete unter der Risskante */
+}
+
+.tactical-shout-icon-container-dark {
+    background-color: #1C1A1614;
+}
+
+.tactical-shout-icon-container-dark SIImage {
+    --unity-image-tint-color: #1C1A16;
+}
+
+/* Taktik im Spiel (Jonas 01.11.2026): die Teamanweisungen lagen ohne Papier über dem Spielfeld. Die ganze Karte
+wird ein Blatt; die Anweisungskacheln heben sich beim Hover nicht (der Schatten stand hart auf der Karte); die
+   Reiter oben (Taktik,
+Standards,
+Elfmeter,
+Gegneranweisungen) bekommen einen Papierzettel; auf der Taktiktafel
+   stehen Namen und Rollen weiß auf dem Rasen. */
+#MatchTactics #Body > BindingRemapper > .grid-element--Block,
+#TacticalPlannerTool #Body > BindingRemapper > .grid-element--Block,
+#FullScreenTeamSelection #Body > BindingRemapper > .grid-element--Block {
+    background-image: var(--bild-blatt);
+    -unity-slice-left: 40;
+    -unity-slice-right: 40;
+    -unity-slice-top: 40;
+    -unity-slice-bottom: 40;
+    -unity-slice-type: tiled;
+    -unity-background-image-tint-color: #F7F7F7;
+    border-width: 0; /* Papierbild: kein Rahmen ums Blatt */
+}
+
+/* Innen keine weiteren Blätter: Papier auf Papier gab doppelte Risskanten und Schatten (Jonas). Die Kacheln sind
+flache Felder mit Haarlinie. */
+#MatchTactics #Body .grid-element--Block .grid-element--Block,
+#TacticalPlannerTool #Body .grid-element--Block .grid-element--Block,
+#FullScreenTeamSelection #Body .grid-element--Block .grid-element--Block,
+#MatchTactics #Body .grid-element--Block .layout-block-base-container,
+#TacticalPlannerTool #Body .grid-element--Block .layout-block-base-container,
+#FullScreenTeamSelection #Body .grid-element--Block .layout-block-base-container,
+#MatchTactics #Body .grid-element--Block .siblock-border,
+#TacticalPlannerTool #Body .grid-element--Block .siblock-border,
+#FullScreenTeamSelection #Body .grid-element--Block .siblock-border {
+    background-image: var(--bild-leer);
+    background-color: #00000000;
+}
+
+#MatchTactics .layout-tile-interaction-button.layout-tile-interaction-button-background,
+#TacticalPlannerTool .layout-tile-interaction-button.layout-tile-interaction-button-background,
+#FullScreenTeamSelection .layout-tile-interaction-button.layout-tile-interaction-button-background,
+#MatchTactics .layout-tile-interaction-button.layout-tile-interaction-button-background:hover,
+#TacticalPlannerTool .layout-tile-interaction-button.layout-tile-interaction-button-background:hover,
+#FullScreenTeamSelection .layout-tile-interaction-button.layout-tile-interaction-button-background:hover {
+    background-image: var(--bild-leer);
+    background-color: #1C1A1608;
+    border-width: 1px;
+    border-color: #1C1A1626;
+    border-radius: 3px;
+    translate: 0 0;
+    rotate: 0deg;
+}
+
+#MatchTactics .layout-tile-interaction-button.layout-tile-interaction-button-background:hover,
+#TacticalPlannerTool .layout-tile-interaction-button.layout-tile-interaction-button-background:hover,
+#FullScreenTeamSelection .layout-tile-interaction-button.layout-tile-interaction-button-background:hover {
+    background-color: #1C1A1614;
+}
+
+#TopBarTacticsButtonGroup #ButtonGroup {
+    background-color: #E6E3DA; /* fest */
+    border-width: 1px;
+    border-color: #1C1A1640;
+    border-radius: 3px;
+}
+
+#TopBarTacticsButtonGroup SIText {
+    color: #1C1A16; /* fest */
+}
+
+#team-instruction-header .sink_containment,
+#TacticalPlannerTool #Body .sink_containment,
+#FullScreenTeamSelection #Body .sink_containment,
+#MatchTactics #Body .sink_containment {
+    background-color: #00000000;
+    border-width: 0;
+}
+
+/* Die drei Spalten der Taktikkarte (Tafel, Anweisungen, Übersicht) liegen ohne Rahmen und Fläche auf dem Blatt
+(Jonas: einheitlich,
+„die Begrenzungen der Innenkästen braucht es nicht“). */
+#MatchTactics #Body .grid-element--Block .grid-element--Block,
+#TacticalPlannerTool #Body .grid-element--Block .grid-element--Block,
+#FullScreenTeamSelection #Body .grid-element--Block .grid-element--Block {
+    background-color: #00000000;
+    border-width: 0;
+}
+
+#MatchTactics #Body .grid-element--Block .grid-element--Block .border-color-layout-modules-block-border-colour,
+#TacticalPlannerTool #Body .grid-element--Block .grid-element--Block .border-color-layout-modules-block-border-colour,
+#FullScreenTeamSelection #Body .grid-element--Block .grid-element--Block .border-color-layout-modules-block-border-colour {
+    border-width: 0;
+}
+
+/* Taktik im Spiel, ruhiger (Jonas 01.11.2026): Tafel, Ersatzbank und Aufstellungstabelle sind außerhalb des Spiels
+eigene Blätter auf dem Tisch; auf dem großen Blatt der Spieltaktik gaben sie Risskanten auf Papier. Hier flache
+   Felder ohne Rahmen wie die Anweisungsspalten. */
+#MatchTactics .tactics-collapsable-pitch-container,
+#TacticalPlannerTool .tactics-collapsable-pitch-container,
+#FullScreenTeamSelection .tactics-collapsable-pitch-container,
+#MatchTactics .tactics-collapsable-pitch-container-with-darker-header,
+#TacticalPlannerTool .tactics-collapsable-pitch-container-with-darker-header,
+#FullScreenTeamSelection .tactics-collapsable-pitch-container-with-darker-header,
+#MatchTactics .tactics-subs-block,
+#TacticalPlannerTool .tactics-subs-block,
+#FullScreenTeamSelection .tactics-subs-block,
+#MatchTactics .components-frames-team-selection-table,
+#TacticalPlannerTool .components-frames-team-selection-table,
+#FullScreenTeamSelection .components-frames-team-selection-table {
+    background-image: var(--bild-leer);
+    background-color: #00000000;
+    border-width: 0;
+}
+
+/* Das Blatt hat einen Rand aus Schnittkante und Schatten; die Knöpfe unten rechts (Bestätigen) ragten darüber
+hinaus (Jonas). Innenabstand bis zur Papierkante. */
+#MatchTactics #Body > BindingRemapper > .grid-element--Block,
+#TacticalPlannerTool #Body > BindingRemapper > .grid-element--Block,
+#FullScreenTeamSelection #Body > BindingRemapper > .grid-element--Block {
+    padding-left: 6px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+    -unity-slice-scale: 0.5; /* schmalere Schnittkante, wie die Blätter der Taktiktafel */
+}
+
+/* Teamanweisungen der Taktikübersicht: FM rechnet die drei Spalten 27 px höher als den Platz auf der Karte, sie
+   ragten unten über die Risskante (Jonas). Begrenzt auf die Kartenhöhe; die Spalten scrollen selbst. */
+#TacticalPlannerTool #TeamInstructionsTabGrid .si-tile {
+    max-height: 688px;
+}
+
+/* Die Übersichtsspalte rechts ist ein eigener Blockrahmen mit Blatt: heller als die beiden anderen Spalten. */
+#MatchTactics #Body .grid-element--Block .border-color-layout-modules-block-border-colour,
+#TacticalPlannerTool #Body .grid-element--Block .border-color-layout-modules-block-border-colour,
+#FullScreenTeamSelection #Body .grid-element--Block .border-color-layout-modules-block-border-colour {
+    background-image: var(--bild-leer);
+    background-color: #00000000;
+}
+
+/* Spielerkärtchen auf der Taktiktafel: der weiße Namensteil trägt links, rechts und unten einen dunklen Rand, die
+   Rollenleiste darüber nicht; das sah nach Versatz aus (Jonas). Kein Rand am Namensteil, dafür eine Haarlinie um
+   das ganze Kärtchen. */
+.tactics-visualiser-player-bottom-border {
+    border-left-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+}
+
+.layout-tile-interaction_border_tactics {
+    border-width: 1px;
+    border-color: #1C1A1659;
+}
+
+/* Aktive taktische Anpassungen: die Symbole auf den dunklen Plaketten waren teils Tinte, teils weiß (Jonas). */
+.tactical-tweak-row__icon-badge, .tactical-tweak-row__icon-badge * {
+    -unity-background-image-tint-color: #FFFFFF; /* fest */
+    --unity-image-tint-color: #FFFFFF; /* fest */
+}
+
+/* Der Ring um das Spielerkärtchen beim Ziehen: dicker, damit die Eignung auf den ersten Blick auffällt (Jonas). */
+.frame-330-tactics-visualiser-player-indicator {
+    border-width: 3px;
+}
+
+/* Beim Ziehen markiert FM die passenden Spieler in der Aufstellungstabelle; gespiegelt war das Grau (Jonas: bläulich). */
+.tactics-row-highlight-highlighted {
+    background-color: #5B9BD54D; /* fest */
+}
+
+/* Taktikseiten (vor dem Spiel, Übersicht, im Spiel): die drei Spalten sind höher als der Platz auf dem Blatt und
+   ragten unten über die Kante (Jonas 02.11.2026). Begrenzt; die Anweisungen scrollen, die Tafel wird kürzer. */
+#FullScreenTeamSelection #TeamInstructionsTabGrid BlockElement.grid-element--Block,
+#TacticalPlannerTool #TeamInstructionsTabGrid BlockElement.grid-element--Block,
+#MatchTactics #TeamInstructionsTabGrid BlockElement.grid-element--Block {
+    max-height: 688px;
+    overflow: hidden;
+}
+
+#FullScreenTeamSelection #TeamInstructionsTabGrid BindingRemapper#pitch-remapper,
+#TacticalPlannerTool #TeamInstructionsTabGrid BindingRemapper#pitch-remapper,
+#MatchTactics #TeamInstructionsTabGrid BindingRemapper#pitch-remapper {
+    max-height: 676px;
+}
+
+/* Taktik (Mannschaftsauswahl vor dem Spiel, Taktikübersicht): die beiden Kopfzeilen (Taktikwahl, Formationen/
+   Teamanweisungen) trugen eigenes randloses Papier über dem großen Blatt, ein hellerer Kasten mit geraden Kanten, der
+   über die Blattkante ragte (Jonas 02.11.2026). Ohne eigene Fläche: das Blatt trägt alles. */
+SIGradient.sigradient.frame-tactics-nav-menu,
+.frame-tactics-nav-menu .tactics-nav-primary-actions-property-1-base,
+.frame-tactics-nav-menu .tactics-nav-secondary-actions-property-1-team-shape {
+    background-image: none;
+    background-color: rgba(0, 0, 0, 0); /* fest */
+    border-width: 0;
+}
+
+/* SIs Verlauf setzt seine Farben per Code (grün): das Verlaufselement unsichtbar, sein Inhalt sichtbar. */
+SIGradient.sigradient.frame-tactics-nav-menu {
+    visibility: hidden;
+}
+
+SIGradient.sigradient.frame-tactics-nav-menu > * {
+    visibility: visible;
+}
+
+.frame-tactics-nav-menu .tactics-nav-secondary-actions-property-1-team-shape {
+    border-bottom-width: 1px;
+    border-bottom-color: #1C1A1626; /* fest */
+}
+
+/* Zurufe/Anpassungen im Spiel (Jonas 02.11.2026): sie öffnen wieder richtig, aber hinter unserem Zettel lag der flache
+   Papierbehälter aller Aufklappmenüs als zweiter Kasten (er schien durch den durchsichtigen Blattrand). Der Behälter
+   lässt sich nicht nur hier ausblenden (kein Elternwähler in USS); der Zettel ragt deshalb um seinen Rand über den
+   Behälter hinaus und deckt ihn. Das Info-Symbol rechts in Tinte statt fast weiß. */
+.floating-element .tactical-tweaks-panel {
+    margin: -10px;
+    padding: 10px 10px 24px 10px; /* gleicht den Überstand aus, Symbole und Reiter lagen sonst an der Kante */
+}
+
+/* Das Info-Symbol trägt SIs helle Tönung im Inline-Stil der Vorlage (info-widget-small-transparent), keine Farbregel
+   erreicht es. Es liegt deshalb auf einem kleinen Tintenpunkt (sein Rahmenelement): hell auf dunkel, wie ein Info-Knopf. */
+.tactical-tweaks-panel VisualElement.ui-concepts-size-small {
+    background-color: #2A2722; /* fest */
+    border-radius: 8px;
+}
+
+/* Reiter im Taktik-Bildschirm des Spiels (Taktik, Standards, Elfmeter, Gegneranweisungen; Jonas 02.11.2026): SIs
+   Reitergruppe lief als heller Streifen über die ganze Breite. Jetzt ein hängender Zettel, so breit wie die Reiter. */
+#BindingExpect_TopBarTacticsButtonGroup ButtonGroup#ButtonGroup.buttongroup.largetabs {
+    align-self: flex-start;
+    background-color: rgba(0, 0, 0, 0); /* fest */
+    border-width: 0;
+    border-radius: 0;
+    background-image: var(--bild-haengeblatt);
+    -unity-slice-left: 40;
+    -unity-slice-right: 40;
+    -unity-slice-top: 40;
+    -unity-slice-bottom: 40;
+    -unity-slice-type: tiled;
+    -unity-slice-scale: 0.5;
+    -unity-background-image-tint-color: #DCD7CB;
+    margin-top: -14px;
+    padding-top: 12px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    padding-right: 12px;
+}
+
+/* Weiße Symbole auf Papier: Kopfsymbole der Taktischen Effektivität, das weiße Verletzten-Plus (Kopf der
+   Medizinischen Abteilung, Mitarbeiter-Kachel der Kaderplanung, Jonas 03.11.2026). In Tinte. */
+.tactical-effectiveness-breakdown .tactic_icons-match, .tactical-effectiveness-breakdown .tactic_icons-buy-in-level,
+.scaling-icons-condition-level-injured---white-size-small-16px, .scaling-icons-condition-level-injured---white-size-medium-24px,
+.scaling-icons-condition-level-injured---white-size-large-32px {
+    -unity-background-image-tint-color: #1C1A16;
+}
+
+/* Positionssymbol in der Kaderliste (Aufgestellt): weiß, auf grauen Feldern unsichtbar. Tinte. */
+FMPitchPositionIcon#PositionIcon.pitch-position-icon-picked {
+    -unity-background-image-tint-color: #1C1A16;
+}

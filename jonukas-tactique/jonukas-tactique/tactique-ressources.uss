@@ -1,0 +1,15 @@
+/* Images et polices utilisées par les règles tactiques. */
+:root {
+    --bild-blatt: url("blatt-f2e7366c.png");
+    --bild-leer: url("leer-2092e68d.png");
+    --bild-flaeche: url("flaeche-bcd4fccb.png");
+    --bild-rasen: url("rasen-657de8e7.png");
+    --bild-platz: url("platz-0a31f2fa.png");
+    --bild-platzschraeg: url("platzschraeg-1029415b.png");
+    --bild-haengeblatt: url("haengeblatt-3648808a.png");
+    --bild-teamplatz: url("teamplatz-fe3ed3f7.png");
+    --bild-druckrasen: url("druckrasen-96a2e6c5.png");
+    --bild-druckrasenschraeg: url("druckrasenschraeg-00190a93.png");
+    --schrift-heft-name-400: url("heft-name-400-98215abb.ttf");
+    --schrift-heft-text-400: url("heft-text-400-87e72b27.ttf");
+}

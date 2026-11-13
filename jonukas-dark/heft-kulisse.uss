@@ -1,0 +1,86 @@
+/* The table the sheets lie on: content layer of the portal and the other base-layer screens (covers SI's
+   background picture). */
+.base-layer-content {
+    background-image: var(--bild-tisch);
+    -unity-background-scale-mode: scale-and-crop;
+    background-position-y: bottom;
+}
+/* Sites and tools (player profile, club, competition, nation ...) draw their own backdrop in club colours as
+   the image of the SIImage #Card-frame (16 templates). The image is made invisible, the table lies under it. */
+#Card-frame {
+    --unity-image-tint-color: #00000000;
+    background-color: #4B2E21;
+}
+/* Custom properties inherit: without this, every code-set image inside a site (the drawn pitch of the tactics
+   tile ...) was invisible too (seen with the workshop 31.10.2026). */
+#Card-frame > * {
+    --unity-image-tint-color: #FFFFFF;
+}
+/* #Card-frame's own background image did not show (inline style), and sites lie over the previous screen,
+   which then showed through (seen in game 23.10.2026): its two children carry the table. */
+#Card-frame > #Header, #Card-frame > #GridSafeArea {
+    background-image: var(--bild-tisch);
+    -unity-background-scale-mode: scale-and-crop;
+    background-position-y: bottom;
+}
+/* One table, no seams (Jonas 02.11.2026: an offset edge under the title bar). Every layer crops the 16:9 table to
+   the full width, i.e. the same scale as the full-screen layer (#GameWorldBackground, 1680 x 945); centred crops of
+   the strips did not line up. Layers that end at the bottom of the screen sit at the bottom, the title bar at the
+   top, the site header right under the title bar (85 px down). */
+#Card-frame > #Header {
+    background-position-y: top -85px;
+}
+/* Bar ("Leiste") in club colours stays SI's gradient, with cardboard fibre on top: the row container is the
+   gradient's next sibling and covers it. */
+#MainNav > SISafeAreaElement {
+    background-image: var(--bild-karton);
+    background-repeat: repeat;
+    background-size: 384px 384px;
+    border-width: 0; /* Papierbild: kein Rahmen ums Blatt */
+}
+/* Crest as a sticker stuck slightly askew on the bar, with a light cut edge (magazine: "Aufkleber mit hellem
+   Schnittrand schräg über die Leiste"). */
+#ClubBadgeStyleSetter {
+    rotate: -6deg;
+    border-width: 3px;
+    border-color: #F2EBDA;
+    background-color: #F2EBDA;
+}
+/* SI paints a picture behind every tool (inbox list ...), which lay as a dark box on the sheet. */
+.tool-background-image {
+    display: none;
+}
+/* Second row: a strip of paper instead of the club gradient with SI's diagonal pattern. */
+.global-nav_secondary-texture-entity-viewer {
+    display: none;
+}
+/* Margins do not change its height (SI sizes the safe area itself); scaled up 16 % in height instead, so the sheet's
+   transparent rim no longer shows a blue line from SI above and the title bar's lighter crop of the table below
+   (Jonas 02.11.2026). The tabs inside are counter-scaled. */
+.navigation-type-competition > SISafeAreaElement {
+    background-color: #00000000;
+    background-image: var(--bild-blatt);
+    -unity-slice-left: 40;
+    -unity-slice-right: 40;
+    -unity-slice-top: 40;
+    -unity-slice-bottom: 40;
+    -unity-slice-type: tiled;
+    -unity-slice-scale: 0.5;
+    -unity-background-image-tint-color: #DCDCDC;
+    margin-left: -18px;
+    margin-right: -18px;
+    scale: 1 1.16;
+    padding-left: 14px;
+    padding-right: 14px;
+    border-width: 0; /* Papierbild: kein Rahmen ums Blatt */
+}
+.navigation-type-competition > SISafeAreaElement > * {
+    scale: 1 0.862;
+}
+/* Under the strip's deckle and shadow lay FM's own blue background picture (the table only covers the content
+   layers); the title bar (both nav rows, 85 px) gets the table too (Jonas 31.10.2026). */
+.main-navigation-overview-container {
+    background-image: var(--bild-tisch);
+    -unity-background-scale-mode: scale-and-crop;
+    background-position-y: top;
+}
